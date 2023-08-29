@@ -34,8 +34,9 @@ const connectToDatabase = () => {
         try {
             console.log('Connected');
             await accessControl_service_1.default.initAccessControl();
-            /* const user = await AccessControlServices.createSuperAdmin()
-            if (user) {
+            const user = await accessControl_service_1.default.createSuperAdmin();
+            console.log(user);
+            /* if (user) {
                 await AccessControlServices.initAccessControl()
             } */
         }

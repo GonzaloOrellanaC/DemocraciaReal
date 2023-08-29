@@ -1,0 +1,1 @@
+2022-11-05 00:16:02 error: [POST] /api/organizations/createOrg >> StatusCode:: 500, Message:: Organization validation failed: name: Path `name` is required.

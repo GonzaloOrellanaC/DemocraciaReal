@@ -1,0 +1,105 @@
+2022-12-13 20:15:26 info: =================================
+2022-12-13 20:15:26 info: ======= ENV: development =======
+2022-12-13 20:15:26 info: 🚀 App listening on the port 5211
+2022-12-13 20:15:26 info: =================================
+2022-12-13 20:15:56 error: [POST] /api/login >> StatusCode:: 409, Message:: Contraseña incorrecta
+2022-12-13 20:15:56 info: [0mPOST /api/login [33m409[0m 152.454 ms - 36[0m
+2022-12-13 20:16:04 error: [POST] /api/login >> StatusCode:: 409, Message:: Contraseña incorrecta
+2022-12-13 20:16:04 info: [0mPOST /api/login [33m409[0m 74.133 ms - 36[0m
+2022-12-13 20:16:12 error: [POST] /api/login >> StatusCode:: 409, Message:: Contraseña incorrecta
+2022-12-13 20:16:12 info: [0mPOST /api/login [33m409[0m 88.485 ms - 36[0m
+2022-12-13 20:16:29 info: [0mPOST /api/login [32m200[0m 88.303 ms - -[0m
+2022-12-13 20:16:46 info: [0mGET /api/users/getAllSystemUser [32m200[0m 30.546 ms - 871[0m
+2022-12-13 20:16:46 info: [0mGET /api/users/getAllSystemUser [36m304[0m 12.779 ms - -[0m
+2022-12-13 20:16:47 info: [0mGET /api/users/getUsers [32m200[0m 40.752 ms - -[0m
+2022-12-13 20:21:04 info: [0mGET /api/users/getAllSystemUser [36m304[0m 11.271 ms - -[0m
+2022-12-13 20:21:06 info: [0mGET /api/organizations/getOrganizations [32m200[0m 4.786 ms - 801[0m
+2022-12-13 20:21:06 info: [0mGET /api/organizations/getOrganizations [36m304[0m 4.150 ms - -[0m
+2022-12-13 20:21:08 info: [0mGET /api/survey/getSurveys [32m200[0m 37.154 ms - -[0m
+2022-12-13 20:21:09 info: [0mGET /api/survey/getSurveys [36m304[0m 31.102 ms - -[0m
+2022-12-13 20:23:21 info: =================================
+2022-12-13 20:23:21 info: ======= ENV: development =======
+2022-12-13 20:23:21 info: 🚀 App listening on the port 5211
+2022-12-13 20:23:21 info: =================================
+2022-12-13 20:31:53 info: [0mGET /api/survey/getSurveys [36m304[0m 39.974 ms - -[0m
+2022-12-13 20:34:23 info: [0mGET /api/survey/getSurveys [36m304[0m 29.523 ms - -[0m
+2022-12-13 20:34:23 info: [0mGET /api/survey/getSurveys [36m304[0m 31.304 ms - -[0m
+2022-12-13 20:34:26 info: [0mPOST /api/survey-response/getSurveyDataBySurveyId [32m201[0m 68.464 ms - 360[0m
+2022-12-13 20:34:26 info: [0mPOST /api/survey-response/getSurveyDataBySurveyId [32m201[0m 30.495 ms - 360[0m
+2022-12-13 20:35:35 info: =================================
+2022-12-13 20:35:35 info: ======= ENV: development =======
+2022-12-13 20:35:35 info: 🚀 App listening on the port 5211
+2022-12-13 20:35:35 info: =================================
+2022-12-13 20:35:41 info: [0mGET /api/survey/getSurveys [32m200[0m 50.800 ms - -[0m
+2022-12-13 20:35:41 info: [0mGET /api/survey/getSurveys [32m200[0m 58.157 ms - -[0m
+2022-12-13 20:37:11 info: =================================
+2022-12-13 20:37:11 info: ======= ENV: development =======
+2022-12-13 20:37:11 info: 🚀 App listening on the port 5211
+2022-12-13 20:37:11 info: =================================
+2022-12-13 20:37:37 info: [0mPOST /api/login [32m200[0m 248.564 ms - -[0m
+2022-12-13 20:37:41 info: [0mGET /api/survey/getSurveys [32m200[0m 251.958 ms - -[0m
+2022-12-13 20:37:41 info: [0mGET /api/survey/getSurveys [36m304[0m 243.486 ms - -[0m
+2022-12-13 20:37:46 info: [0mPOST /api/survey-response/getSurveyDataBySurveyId [32m201[0m 155.321 ms - -[0m
+2022-12-13 20:37:46 info: [0mPOST /api/survey-response/getSurveyDataBySurveyId [32m201[0m 157.904 ms - -[0m
+2022-12-13 20:39:46 info: [0mPOST /api/survey/getSurveyById [32m200[0m 238.058 ms - -[0m
+2022-12-13 20:39:46 info: [0mPOST /api/survey-response/getSurveyDataBySurveyId [32m201[0m 163.760 ms - -[0m
+2022-12-13 21:56:51 info: [0mPOST /api/survey/getSurveyById [32m200[0m 284.414 ms - -[0m
+2022-12-13 21:56:51 info: [0mPOST /api/survey/getSurveyById [32m200[0m 269.344 ms - -[0m
+2022-12-13 21:56:51 info: [0mPOST /api/survey-response/getSurveyDataBySurveyId [32m201[0m 154.028 ms - -[0m
+2022-12-13 21:56:51 info: [0mPOST /api/survey-response/getSurveyDataBySurveyId [32m201[0m 163.048 ms - -[0m
+2022-12-13 21:57:41 info: [0mPOST /api/survey/getSurveyById [32m200[0m 239.054 ms - -[0m
+2022-12-13 21:57:41 info: [0mPOST /api/survey-response/getSurveyDataBySurveyId [32m201[0m 153.028 ms - -[0m
+2022-12-13 21:59:58 info: [0mPOST /api/survey/getSurveyById [32m200[0m 256.914 ms - -[0m
+2022-12-13 21:59:58 info: [0mPOST /api/survey/getSurveyById [32m200[0m 238.110 ms - -[0m
+2022-12-13 21:59:59 info: [0mPOST /api/survey-response/getSurveyDataBySurveyId [32m201[0m 148.995 ms - -[0m
+2022-12-13 21:59:59 info: [0mPOST /api/survey-response/getSurveyDataBySurveyId [32m201[0m 151.942 ms - -[0m
+2022-12-13 22:02:11 info: [0mPOST /api/survey/getSurveyById [32m200[0m 241.430 ms - -[0m
+2022-12-13 22:02:12 info: [0mPOST /api/survey-response/getSurveyDataBySurveyId [32m201[0m 159.351 ms - -[0m
+2022-12-13 22:17:07 info: =================================
+2022-12-13 22:17:07 info: ======= ENV: development =======
+2022-12-13 22:17:07 info: 🚀 App listening on the port 5211
+2022-12-13 22:17:07 info: =================================
+2022-12-13 22:19:42 info: [0mPOST /api/survey/getSurveyById [0m-[0m - ms - -[0m
+2022-12-13 22:19:42 info: [0mPOST /api/survey/getSurveyById [0m-[0m - ms - -[0m
+2022-12-13 22:19:43 error: [POST] /api/survey/getSurveyById >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-13 22:19:43 error: [POST] /api/survey/getSurveyById >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-13 22:19:53 error: [POST] /api/survey/getSurveyById >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-13 22:19:53 info: [0mPOST /api/survey/getSurveyById [33m401[0m 10012.787 ms - 40[0m
+2022-12-13 22:19:53 error: [POST] /api/survey/getSurveyById >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-13 22:19:53 info: [0mPOST /api/survey/getSurveyById [33m401[0m 10011.887 ms - 40[0m
+2022-12-13 22:19:54 info: [0mGET /api/survey/getSurveys [0m-[0m - ms - -[0m
+2022-12-13 22:20:00 error: [GET] /api/survey/getSurveys >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-13 22:20:05 error: [GET] /api/survey/getSurveys >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-13 22:20:05 info: [0mGET /api/survey/getSurveys [33m401[0m 10018.127 ms - 40[0m
+2022-12-13 22:20:09 error: [GET] /api/organizations/getOrganizations >> StatusCode:: 500, Message:: Operation `organizations.find()` buffering timed out after 10000ms
+2022-12-13 22:20:09 info: [0mGET /api/organizations/getOrganizations [31m500[0m 10010.900 ms - 80[0m
+2022-12-13 22:20:11 error: [GET] /api/users/getAllSystemUser >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-13 22:20:11 info: [0mGET /api/users/getAllSystemUser [33m401[0m 10017.024 ms - 40[0m
+2022-12-13 22:20:16 error: [GET] /api/survey/getSurveys >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-13 22:20:16 info: [0mGET /api/survey/getSurveys [33m401[0m 10003.608 ms - 40[0m
+2022-12-13 22:20:16 info: [0mGET /api/organizations/getOrganizations [0m-[0m - ms - -[0m
+2022-12-13 22:20:26 error: [GET] /api/organizations/getOrganizations >> StatusCode:: 500, Message:: Operation `organizations.find()` buffering timed out after 10000ms
+2022-12-13 22:20:37 info: [0mPOST /api/login [0m-[0m - ms - -[0m
+2022-12-13 22:20:38 error: [POST] /api/login >> StatusCode:: 500, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2022-12-13 22:21:01 error: [POST] /api/login >> StatusCode:: 500, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2022-12-13 22:21:01 info: [0mPOST /api/login [31m500[0m 10007.176 ms - 75[0m
+2022-12-13 22:21:27 error: [POST] /api/login >> StatusCode:: 500, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2022-12-13 22:21:27 info: [0mPOST /api/login [31m500[0m 10011.231 ms - 75[0m
+2022-12-13 22:22:54 info: =================================
+2022-12-13 22:22:54 info: ======= ENV: development =======
+2022-12-13 22:22:54 info: 🚀 App listening on the port 5211
+2022-12-13 22:22:54 info: =================================
+2022-12-13 22:22:54 info: [0mGET /main.2c8132d1b0476e7b05fd.hot-update.json [32m200[0m 7.972 ms - 879[0m
+2022-12-13 23:22:26 error: [POST] /api/login >> StatusCode:: 409, Message:: Email gonzalo.orellana@kauel.com no encontrado
+2022-12-13 23:22:26 info: [0mPOST /api/login [33m409[0m 112.947 ms - 60[0m
+2022-12-13 23:22:34 info: [0mPOST /api/login [32m200[0m 254.884 ms - -[0m
+2022-12-13 23:22:45 info: [0mGET /api/survey/getSurveys [32m200[0m 255.679 ms - -[0m
+2022-12-13 23:22:45 info: [0mGET /api/survey/getSurveys [36m304[0m 251.181 ms - -[0m
+2022-12-13 23:22:47 info: [0mPOST /api/survey/getSurveyById [32m200[0m 249.566 ms - -[0m
+2022-12-13 23:22:47 info: [0mPOST /api/survey/getSurveyById [32m200[0m 250.431 ms - -[0m
+2022-12-13 23:22:47 info: [0mPOST /api/survey-response/getSurveyDataBySurveyId [32m201[0m 159.689 ms - -[0m
+2022-12-13 23:22:47 info: [0mPOST /api/survey-response/getSurveyDataBySurveyId [32m201[0m 167.578 ms - -[0m
+2022-12-13 23:48:42 info: [0mPOST /api/survey/getSurveyById [32m200[0m 263.743 ms - -[0m
+2022-12-13 23:48:42 info: [0mPOST /api/survey/getSurveyById [32m200[0m 284.162 ms - -[0m
+2022-12-13 23:48:42 info: [0mPOST /api/survey-response/getSurveyDataBySurveyId [32m201[0m 155.385 ms - -[0m
+2022-12-13 23:48:42 info: [0mPOST /api/survey-response/getSurveyDataBySurveyId [32m201[0m 156.589 ms - -[0m

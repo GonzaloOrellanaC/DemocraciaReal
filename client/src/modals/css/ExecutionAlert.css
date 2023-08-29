@@ -1,0 +1,21 @@
+.execution-alert-modal {
+    --height: 350px !important;
+    --border-radius: 20px;
+}
+
+.icon-execution-alert {
+    font-size: 100px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.title-execution-alert {
+    font-size: 24px;
+    text-align: center;
+}
+
+.text-execution-alert {
+    font-size: 14px;
+    text-align: center;
+}

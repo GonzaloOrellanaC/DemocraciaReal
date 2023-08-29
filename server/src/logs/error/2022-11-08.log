@@ -1,0 +1,3 @@
+2022-11-08 18:57:20 error: [GET] /api/organizations/getOrganizations >> StatusCode:: 401, Message:: Wrong authentication token
+2022-11-08 18:57:20 error: [GET] /api/organizations/getOrganizations >> StatusCode:: 401, Message:: Wrong authentication token
+2022-11-08 18:58:16 error: [POST] /api/organizations/createOrg >> StatusCode:: 401, Message:: Wrong authentication token

@@ -1,0 +1,4 @@
+2022-11-17 12:42:28 error: [GET] /api/users/getAllSystemUser >> StatusCode:: 401, Message:: Wrong authentication token
+2022-11-17 12:42:28 error: [GET] /api/users/getAllSystemUser >> StatusCode:: 401, Message:: Wrong authentication token
+2022-11-17 12:42:33 error: [GET] /api/organizations/getOrganizations >> StatusCode:: 401, Message:: Wrong authentication token
+2022-11-17 12:42:33 error: [GET] /api/organizations/getOrganizations >> StatusCode:: 401, Message:: Wrong authentication token

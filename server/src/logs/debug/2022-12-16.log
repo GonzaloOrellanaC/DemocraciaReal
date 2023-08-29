@@ -1,0 +1,19 @@
+2022-12-16 10:40:38 info: =================================
+2022-12-16 10:40:38 info: ======= ENV: development =======
+2022-12-16 10:40:38 info: 🚀 App listening on the port 5211
+2022-12-16 10:40:38 info: =================================
+2022-12-16 10:40:46 info: [0mPOST /api/login [32m200[0m 5480.340 ms - -[0m
+2022-12-16 10:40:50 info: [0mGET /api/survey/getSurveys [32m200[0m 242.072 ms - -[0m
+2022-12-16 10:40:51 info: [0mGET /api/survey/getSurveys [36m304[0m 222.860 ms - -[0m
+2022-12-16 10:40:53 info: [0mPOST /api/survey/getSurveyById [32m200[0m 210.401 ms - -[0m
+2022-12-16 10:40:53 info: [0mPOST /api/survey/getSurveyById [32m200[0m 234.302 ms - -[0m
+2022-12-16 10:40:53 info: [0mPOST /api/survey-response/getSurveyDataBySurveyId [32m201[0m 135.756 ms - -[0m
+2022-12-16 10:40:53 info: [0mPOST /api/survey-response/getSurveyDataBySurveyId [32m201[0m 130.609 ms - -[0m
+2022-12-16 10:41:54 info: [0mGET /api/users/getAllSystemUser [32m200[0m 181.307 ms - 871[0m
+2022-12-16 10:41:56 info: [0mGET /api/users/getAllSystemUser [36m304[0m 197.235 ms - -[0m
+2022-12-16 10:42:06 info: [0mGET /api/organizations/getOrganizations [32m200[0m 113.661 ms - -[0m
+2022-12-16 10:42:16 info: [0mGET /api/organizations/getOrganizations [36m304[0m 105.374 ms - -[0m
+2022-12-16 10:42:16 info: [0mPOST /api/organizations/getOrgById [32m200[0m 190.545 ms - -[0m
+2022-12-16 10:42:17 info: [0mPOST /api/organizations/getOrgById [32m200[0m 183.560 ms - -[0m
+2022-12-16 10:42:19 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 126.328 ms - 712[0m
+2022-12-16 10:42:19 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 105.837 ms - 712[0m

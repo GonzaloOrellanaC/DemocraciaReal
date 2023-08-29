@@ -1,0 +1,109 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\src\\logs\\debug\\.3d89b4e4d0239792aaba942da7a5fa23e1bb7b41-audit.json",
+    "files": [
+        {
+            "date": 1669686970144,
+            "name": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\src\\logs\\debug\\2022-11-28.log",
+            "hash": "f61c3eb14c8e5587b23e35942ded456c"
+        },
+        {
+            "date": 1669690879339,
+            "name": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\src\\logs\\debug\\2022-11-29.log",
+            "hash": "7a89f9a6d7784a9726ebb2ff5c0dc8d1"
+        },
+        {
+            "date": 1669803798670,
+            "name": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\src\\logs\\debug\\2022-11-30.log",
+            "hash": "0e141e1aab1a63c25ed3e4bef5abf4f4"
+        },
+        {
+            "date": 1669863909232,
+            "name": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\src\\logs\\debug\\2022-12-01.log",
+            "hash": "0b3d56ee9e56fb27600e5e6b5ccc70d5"
+        },
+        {
+            "date": 1669950056178,
+            "name": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\src\\logs\\debug\\2022-12-02.log",
+            "hash": "6dd3654fdbf8071d7b00223073f91e1d"
+        },
+        {
+            "date": 1670252251316,
+            "name": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\src\\logs\\debug\\2022-12-05.log",
+            "hash": "8870832fedb794cb280eeed29a983998"
+        },
+        {
+            "date": 1670320051866,
+            "name": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\src\\logs\\debug\\2022-12-06.log",
+            "hash": "0ffb2d83b4caa28e1ea94b8761c443ca"
+        },
+        {
+            "date": 1670414219268,
+            "name": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\src\\logs\\debug\\2022-12-07.log",
+            "hash": "98d9135275b56e87d49fd39daba942a8"
+        },
+        {
+            "date": 1670550812265,
+            "name": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\src\\logs\\debug\\2022-12-08.log",
+            "hash": "b923c78d8c4243c7216eafb9bc518e48"
+        },
+        {
+            "date": 1670555066646,
+            "name": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\src\\logs\\debug\\2022-12-09.log",
+            "hash": "5f26dd0618204b5d29df67668fc82e14"
+        },
+        {
+            "date": 1670700753315,
+            "name": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\src\\logs\\debug\\2022-12-10.log",
+            "hash": "0f1f8bb92251928ddcf89aa5115be046"
+        },
+        {
+            "date": 1670811307879,
+            "name": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\src\\logs\\debug\\2022-12-11.log",
+            "hash": "2eae3cdfa392ec1d64f3dc13563ce7e0"
+        },
+        {
+            "date": 1670814306315,
+            "name": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\src\\logs\\debug\\2022-12-12.log",
+            "hash": "3820dd8b4eed2b4ff5ecb6d06545b439"
+        },
+        {
+            "date": 1670973319109,
+            "name": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\src\\logs\\debug\\2022-12-13.log",
+            "hash": "f280e6c04712a8dbbf81b4ec2e2676fc"
+        },
+        {
+            "date": 1671015975878,
+            "name": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\src\\logs\\debug\\2022-12-14.log",
+            "hash": "f0aeae3b172abf2439ee5780a62f7e39"
+        },
+        {
+            "date": 1671102436196,
+            "name": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\src\\logs\\debug\\2022-12-15.log",
+            "hash": "54f286d3ee730bfe37b2063353653a3f"
+        },
+        {
+            "date": 1671198033625,
+            "name": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\src\\logs\\debug\\2022-12-16.log",
+            "hash": "c001ac5e1993d6fec6505bf06be8cf40"
+        },
+        {
+            "date": 1672110564158,
+            "name": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\src\\logs\\debug\\2022-12-27.log",
+            "hash": "1f47be30a09f4797e46aaf1272116dc8"
+        },
+        {
+            "date": 1676671128088,
+            "name": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\src\\logs\\debug\\2023-02-17.log",
+            "hash": "fc9ec60a53db22d4812e5cac0dce86dc"
+        },
+        {
+            "date": 1676992335831,
+            "name": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\src\\logs\\debug\\2023-02-21.log",
+            "hash": "7ce4e8a4ddd33d8ec994bc6eca7644a3"
+        }
+    ]
+}

@@ -1,0 +1,2 @@
+2022-11-14 15:28:04 error: [POST] /api/organizations/createOrg >> StatusCode:: 500, Message:: Organization validation failed: name: Path `name` is required.
+2022-11-14 17:44:17 error: [POST] /api/users/createUser >> StatusCode:: 500, Message:: User validation failed: run: Run is required

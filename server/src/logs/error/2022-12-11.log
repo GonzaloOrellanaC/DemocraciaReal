@@ -1,0 +1,5 @@
+2022-12-11 23:43:45 error: [GET] /api/survey/getSurveys >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-11 23:43:45 error: [GET] /api/survey/getSurveys >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-11 23:43:50 error: [GET] /api/survey/getSurveys >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-11 23:43:50 error: [GET] /api/survey/getSurveys >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-11 23:44:13 error: [POST] /api/login >> StatusCode:: 409, Message:: Contraseña incorrecta

@@ -1,0 +1,17 @@
+2022-12-12 17:30:33 info: =================================
+2022-12-12 17:30:33 info: ======= ENV: development =======
+2022-12-12 17:30:33 info: 🚀 App listening on the port 5211
+2022-12-12 17:30:33 info: =================================
+2022-12-12 17:30:42 info: [0mGET / [36m304[0m 9.799 ms - -[0m
+2022-12-12 17:30:42 info: [0mGET /static/js/main.a51cea18.js [36m304[0m 2.951 ms - -[0m
+2022-12-12 17:30:42 info: [0mGET /static/css/main.542f923a.css [36m304[0m 1.427 ms - -[0m
+2022-12-12 17:30:42 info: [0mGET /static/js/22.c8aa3080.chunk.js [36m304[0m 1.435 ms - -[0m
+2022-12-12 17:30:42 info: [0mGET /assets/logo/logo.webp [36m304[0m 1.444 ms - -[0m
+2022-12-12 17:30:42 info: [0mGET /static/media/cabecera-2A.5b9a7a4721437305af41.jpg [36m304[0m 1.818 ms - -[0m
+2022-12-12 17:30:42 info: [0mGET /static/media/Epilogue-Regular.666614487352ae23e96b.ttf [36m304[0m 0.979 ms - -[0m
+2022-12-12 17:30:42 info: [0mGET /static/js/272.d549375b.chunk.js [36m304[0m 3.951 ms - -[0m
+2022-12-12 17:30:42 info: [0mGET /manifest.json [36m304[0m 3.190 ms - -[0m
+2022-12-12 18:21:31 info: =================================
+2022-12-12 18:21:31 info: ======= ENV: development =======
+2022-12-12 18:21:31 info: 🚀 App listening on the port 5211
+2022-12-12 18:21:31 info: =================================

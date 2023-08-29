@@ -1,0 +1,8 @@
+2022-12-05 12:03:21 error: Se requieren credenciales SMTP
+2022-12-05 12:40:41 error: ENOENT: no such file or directory, open 'C:\Users\gorel\Documents\Tesso\DemocraciaDigital\DemocraciaDigital\client\public\images\logo.png'
+2022-12-05 12:40:49 error: ENOENT: no such file or directory, open 'C:\Users\gorel\Documents\Tesso\DemocraciaDigital\DemocraciaDigital\client\public\images\logo.png'
+2022-12-05 12:44:01 error: ENOENT: no such file or directory, open 'C:\Users\gorel\Documents\Tesso\DemocraciaDigital\DemocraciaDigital\client\public\assets\images\logo.png'
+2022-12-05 12:44:09 error: ENOENT: no such file or directory, open 'C:\Users\gorel\Documents\Tesso\DemocraciaDigital\DemocraciaDigital\client\public\assets\images\logo.png'
+2022-12-05 12:45:48 error: ENOENT: no such file or directory, open 'C:\Users\gorel\Documents\Tesso\DemocraciaDigital\DemocraciaDigital\client\public\assets\images\logo\logo.webp'
+2022-12-05 12:46:00 error: ENOENT: no such file or directory, open 'C:\Users\gorel\Documents\Tesso\DemocraciaDigital\DemocraciaDigital\client\public\assets\images\logo\logo.webp'
+2022-12-05 17:11:30 error: [POST] /api/reset-password >> StatusCode:: 500, Message:: invalid token

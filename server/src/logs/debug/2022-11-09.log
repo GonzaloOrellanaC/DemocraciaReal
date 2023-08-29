@@ -1,0 +1,54 @@
+2022-11-09 09:01:35 info: =================================
+2022-11-09 09:01:35 info: ======= ENV: development =======
+2022-11-09 09:01:35 info: 🚀 App listening on the port 5210
+2022-11-09 09:01:35 info: =================================
+2022-11-09 09:03:51 info: [0mGET /api/organizations/getOrganizations [36m304[0m 23.933 ms - -[0m
+2022-11-09 09:03:51 info: [0mGET /api/organizations/getOrganizations [36m304[0m 12.043 ms - -[0m
+2022-11-09 09:03:58 info: [0mPOST /api/organizations/getOrgById [32m200[0m 112.170 ms - 569[0m
+2022-11-09 09:03:58 info: [0mPOST /api/organizations/getOrgById [32m200[0m 21.761 ms - 569[0m
+2022-11-09 09:04:04 info: [0mPOST /api/organizations/getOrgById [32m200[0m 18.746 ms - 553[0m
+2022-11-09 09:04:04 info: [0mPOST /api/organizations/getOrgById [32m200[0m 19.586 ms - 553[0m
+2022-11-09 09:05:10 info: [0mPOST /api/organizations/getOrgById [32m200[0m 15.581 ms - 569[0m
+2022-11-09 09:05:10 info: [0mPOST /api/organizations/getOrgById [32m200[0m 15.253 ms - 569[0m
+2022-11-09 09:12:32 info: [0mGET /api/organizations/getOrganizations [36m304[0m 55.525 ms - -[0m
+2022-11-09 09:12:33 info: [0mGET /api/organizations/getOrganizations [36m304[0m 8.799 ms - -[0m
+2022-11-09 09:12:35 info: [0mPOST /api/organizations/getOrgById [32m200[0m 9.575 ms - 569[0m
+2022-11-09 09:12:35 info: [0mPOST /api/organizations/getOrgById [32m200[0m 12.713 ms - 569[0m
+2022-11-09 09:43:49 info: [0mGET /favicon.ico [32m200[0m 45.911 ms - 885[0m
+2022-11-09 12:19:09 info: [0mPOST /api/login [32m200[0m 296.378 ms - -[0m
+2022-11-09 12:19:13 info: [0mGET /api/organizations/getOrganizations [32m200[0m 10.805 ms - -[0m
+2022-11-09 12:19:13 info: [0mGET /api/organizations/getOrganizations [36m304[0m 12.954 ms - -[0m
+2022-11-09 12:19:16 info: [0mPOST /api/organizations/getOrgById [32m200[0m 9.799 ms - 569[0m
+2022-11-09 12:19:16 info: [0mPOST /api/organizations/getOrgById [32m200[0m 12.546 ms - 569[0m
+2022-11-09 12:19:25 info: [0mPOST /api/organizations/getOrgById [32m200[0m 29.773 ms - 569[0m
+2022-11-09 12:19:25 info: [0mPOST /api/organizations/getOrgById [32m200[0m 30.202 ms - 569[0m
+2022-11-09 12:37:01 info: [0mPOST /api/login [32m200[0m 73.485 ms - -[0m
+2022-11-09 12:37:07 info: [0mGET /api/organizations/getOrganizations [36m304[0m 8.512 ms - -[0m
+2022-11-09 12:37:07 info: [0mGET /api/organizations/getOrganizations [36m304[0m 8.389 ms - -[0m
+2022-11-09 12:37:25 info: [0mPOST /api/organizations/getOrgById [32m200[0m 9.053 ms - 569[0m
+2022-11-09 12:37:25 info: [0mPOST /api/organizations/getOrgById [32m200[0m 8.733 ms - 569[0m
+2022-11-09 12:37:49 info: [0mGET /api/organizations/getOrganizations [36m304[0m 7.769 ms - -[0m
+2022-11-09 12:37:49 info: [0mGET /api/organizations/getOrganizations [36m304[0m 5.366 ms - -[0m
+2022-11-09 13:38:14 info: [0mPOST /api/login [32m200[0m 90.136 ms - -[0m
+2022-11-09 13:43:39 info: [0mGET /api/organizations/getOrganizations [36m304[0m 8.159 ms - -[0m
+2022-11-09 13:43:39 info: [0mGET /api/organizations/getOrganizations [36m304[0m 5.818 ms - -[0m
+2022-11-09 17:23:47 info: =================================
+2022-11-09 17:23:47 info: ======= ENV: development =======
+2022-11-09 17:23:47 info: 🚀 App listening on the port 5210
+2022-11-09 17:23:47 info: =================================
+2022-11-09 18:43:52 info: [0mPOST /api/login [32m200[0m 175.480 ms - -[0m
+2022-11-09 18:44:08 info: [0mGET /api/organizations/getOrganizations [32m200[0m 54.557 ms - -[0m
+2022-11-09 18:44:08 info: [0mGET /api/organizations/getOrganizations [36m304[0m 15.735 ms - -[0m
+2022-11-09 18:44:10 info: [0mPOST /api/organizations/getOrgById [32m200[0m 22.082 ms - 569[0m
+2022-11-09 18:44:10 info: [0mPOST /api/organizations/getOrgById [32m200[0m 22.990 ms - 569[0m
+2022-11-09 18:44:16 info: [0mPOST /api/organizations/editOrg [32m201[0m 10.260 ms - 563[0m
+2022-11-09 18:44:30 info: [0mGET /api/organizations/getOrganizations [32m200[0m 85.439 ms - -[0m
+2022-11-09 18:44:30 info: [0mGET /api/organizations/getOrganizations [36m304[0m 15.512 ms - -[0m
+2022-11-09 18:48:46 info: [0mPOST /api/organizations/getOrgById [32m200[0m 20.000 ms - 569[0m
+2022-11-09 18:48:47 info: [0mPOST /api/organizations/getOrgById [32m200[0m 19.568 ms - 569[0m
+2022-11-09 18:48:49 info: [0mPOST /api/organizations/getOrgById [32m200[0m 13.735 ms - 553[0m
+2022-11-09 18:48:49 info: [0mPOST /api/organizations/getOrgById [32m200[0m 11.570 ms - 553[0m
+2022-11-09 18:56:24 info: [0mGET /api/organizations/getOrganizations [36m304[0m 7.853 ms - -[0m
+2022-11-09 18:57:10 info: [0mGET /api/organizations/getOrganizations [36m304[0m 7.926 ms - -[0m
+2022-11-09 19:52:57 info: [0mGET /api/organizations/getOrganizations [36m304[0m 20.540 ms - -[0m
+2022-11-09 19:54:00 info: [0mGET /api/organizations/getOrganizations [36m304[0m 5.454 ms - -[0m

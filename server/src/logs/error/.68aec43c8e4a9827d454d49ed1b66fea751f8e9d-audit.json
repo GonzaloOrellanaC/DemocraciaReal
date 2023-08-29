@@ -1,0 +1,24 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\gorel\\Documents\\KauelWorks\\Kauel-Alert-System\\server\\src\\logs\\error\\.68aec43c8e4a9827d454d49ed1b66fea751f8e9d-audit.json",
+    "files": [
+        {
+            "date": 1667503429071,
+            "name": "C:\\Users\\gorel\\Documents\\KauelWorks\\Kauel-Alert-System\\server\\src\\logs\\error\\2022-11-03.log",
+            "hash": "6ccb3e9e0a1cb4e410b13924b5993603"
+        },
+        {
+            "date": 1667575106819,
+            "name": "C:\\Users\\gorel\\Documents\\KauelWorks\\Kauel-Alert-System\\server\\src\\logs\\error\\2022-11-04.log",
+            "hash": "a8694de9e9170e81867d01c4e773d8b3"
+        },
+        {
+            "date": 1667617598445,
+            "name": "C:\\Users\\gorel\\Documents\\KauelWorks\\Kauel-Alert-System\\server\\src\\logs\\error\\2022-11-05.log",
+            "hash": "afc4b9df73625278f45f3317cfe04335"
+        }
+    ]
+}

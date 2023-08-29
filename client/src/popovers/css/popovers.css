@@ -1,0 +1,18 @@
+.user-popover-container {
+    text-align: center;
+    max-width: 300px;
+}
+.question-popover {
+    --width: 70%;
+    --max-height: calc(100vh - 100px);
+}
+.question-popover-container {
+    width: 100%;
+    max-height: calc(100vh - 250px);
+    overflow-y: auto;
+}
+
+.question-list {
+    height: calc(100vh - 190px);
+    overflow-y: auto;
+}

@@ -1,0 +1,34 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\gorel\\Documents\\PDG\\democracia-online\\server\\src\\logs\\error\\.cebd23e7e9fc1686b6a46f9b5693d374b8a5ca04-audit.json",
+    "files": [
+        {
+            "date": 1692580026765,
+            "name": "C:\\Users\\gorel\\Documents\\PDG\\democracia-online\\server\\src\\logs\\error\\2023-08-20.log",
+            "hash": "bfb27ad696bed2727b1e664fbf15d809"
+        },
+        {
+            "date": 1692624060997,
+            "name": "C:\\Users\\gorel\\Documents\\PDG\\democracia-online\\server\\src\\logs\\error\\2023-08-21.log",
+            "hash": "c0961a20701952ff45d59585901dda57"
+        },
+        {
+            "date": 1693056064377,
+            "name": "C:\\Users\\gorel\\Documents\\PDG\\democracia-online\\server\\src\\logs\\error\\2023-08-26.log",
+            "hash": "d312cbb1bf6f83df3b5b82eced332728"
+        },
+        {
+            "date": 1693227579852,
+            "name": "C:\\Users\\gorel\\Documents\\PDG\\democracia-online\\server\\src\\logs\\error\\2023-08-28.log",
+            "hash": "d84b7ab0d9a0b082292553d0f552660b"
+        },
+        {
+            "date": 1693335945704,
+            "name": "C:\\Users\\gorel\\Documents\\PDG\\democracia-online\\server\\src\\logs\\error\\2023-08-29.log",
+            "hash": "e3969378881858cad88e5ccae0c181c6"
+        }
+    ]
+}

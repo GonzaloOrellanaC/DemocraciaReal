@@ -1,0 +1,7 @@
+{
+  "name": "Democracia-Digital",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

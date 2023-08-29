@@ -1,0 +1,25 @@
+2022-12-07 08:56:59 info: [0mPOST /api/login [32m200[0m 75.123 ms - -[0m
+2022-12-07 08:57:09 info: =================================
+2022-12-07 08:57:09 info: ======= ENV: development =======
+2022-12-07 08:57:09 info: 🚀 App listening on the port 5211
+2022-12-07 08:57:09 info: =================================
+2022-12-07 08:57:18 info: [0mGET /api/survey/getSurveys [32m200[0m 50.941 ms - -[0m
+2022-12-07 08:57:18 info: [0mGET /api/survey/getSurveys [36m304[0m 19.544 ms - -[0m
+2022-12-07 08:57:20 info: [0mGET /api/organizations/getOrganizations [32m200[0m 6.008 ms - 775[0m
+2022-12-07 08:57:20 info: [0mGET /api/organizations/getOrganizations [36m304[0m 4.078 ms - -[0m
+2022-12-07 09:14:09 info: [0mPOST /api/survey/createSurvey [32m200[0m 90.805 ms - -[0m
+2022-12-07 09:14:12 info: [0mGET /api/survey/getSurveys [32m200[0m 39.210 ms - -[0m
+2022-12-07 09:14:12 info: [0mGET /api/survey/getSurveys [36m304[0m 26.318 ms - -[0m
+2022-12-07 09:14:28 info: [0mPOST /api/survey/getSurveyByOrganizationId [32m200[0m 18.137 ms - -[0m
+2022-12-07 09:14:29 info: [0mPOST /api/survey/getSurveyByOrganizationId [32m200[0m 9.988 ms - -[0m
+2022-12-07 09:14:42 info: [0mPOST /api/survey/getSurveyById [32m200[0m 36.811 ms - -[0m
+2022-12-07 09:14:42 info: [0mPOST /api/survey/getSurveyById [32m200[0m 42.145 ms - -[0m
+2022-12-07 09:24:39 info: [0mPOST /api/survey/getSurveyById [32m200[0m 14.625 ms - -[0m
+2022-12-07 09:24:39 info: [0mPOST /api/survey/getSurveyById [32m200[0m 25.157 ms - -[0m
+2022-12-07 09:24:47 info: [0mPOST /api/survey/getSurveyById [32m200[0m 20.443 ms - -[0m
+2022-12-07 09:24:47 info: [0mPOST /api/survey/getSurveyById [32m200[0m 16.371 ms - -[0m
+2022-12-07 09:25:33 info: [0mPOST /api/survey/getSurveyById [32m200[0m 48.065 ms - -[0m
+2022-12-07 09:25:33 info: [0mPOST /api/survey/getSurveyById [32m200[0m 18.315 ms - -[0m
+2022-12-07 09:26:28 info: [0mPOST /api/survey/getSurveyByOrganizationId [32m200[0m 14.945 ms - -[0m
+2022-12-07 09:26:28 info: [0mPOST /api/survey/getSurveyByOrganizationId [32m200[0m 10.205 ms - -[0m
+2022-12-07 12:10:02 info: [0mGET /favicon.ico [32m200[0m 82.195 ms - 879[0m

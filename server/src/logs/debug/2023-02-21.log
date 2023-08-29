@@ -1,0 +1,10 @@
+2023-02-21 12:12:20 info: =================================
+2023-02-21 12:12:20 info: ======= ENV: development =======
+2023-02-21 12:12:20 info: 🚀 App listening on the port 5211
+2023-02-21 12:12:20 info: =================================
+2023-02-21 12:14:08 info: [0mGET /api/organizations/getOrganizations [32m200[0m 147.952 ms - -[0m
+2023-02-21 12:14:08 info: [0mGET /api/organizations/getOrganizations [36m304[0m 87.059 ms - -[0m
+2023-02-21 12:14:33 info: =================================
+2023-02-21 12:14:33 info: ======= ENV: development =======
+2023-02-21 12:14:33 info: 🚀 App listening on the port 5211
+2023-02-21 12:14:33 info: =================================

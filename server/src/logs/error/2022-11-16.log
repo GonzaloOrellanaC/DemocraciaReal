@@ -1,0 +1,23 @@
+2022-11-16 07:32:51 error: [GET] /api/organizations/getOrganizations >> StatusCode:: 401, Message:: Wrong authentication token
+2022-11-16 07:32:51 error: [GET] /api/organizations/getOrganizations >> StatusCode:: 401, Message:: Wrong authentication token
+2022-11-16 07:32:54 error: [GET] /api/organizations/getOrganizations >> StatusCode:: 401, Message:: Wrong authentication token
+2022-11-16 07:32:54 error: [GET] /api/organizations/getOrganizations >> StatusCode:: 401, Message:: Wrong authentication token
+2022-11-16 07:32:57 error: [GET] /api/organizations/getOrganizations >> StatusCode:: 401, Message:: Wrong authentication token
+2022-11-16 07:32:57 error: [GET] /api/organizations/getOrganizations >> StatusCode:: 401, Message:: Wrong authentication token
+2022-11-16 07:33:03 error: [GET] /api/organizations/getOrganizations >> StatusCode:: 401, Message:: Wrong authentication token
+2022-11-16 07:33:03 error: [GET] /api/organizations/getOrganizations >> StatusCode:: 401, Message:: Wrong authentication token
+2022-11-16 07:33:07 error: [GET] /api/users/getUsers >> StatusCode:: 401, Message:: Wrong authentication token
+2022-11-16 07:33:07 error: [GET] /api/users/getUsers >> StatusCode:: 401, Message:: Wrong authentication token
+2022-11-16 07:33:35 error: [POST] /api/organizations/createOrg >> StatusCode:: 401, Message:: Wrong authentication token
+2022-11-16 18:21:49 error: [POST] /api/users/getUserById >> StatusCode:: 404, Message:: Ususario no encontrado
+2022-11-16 18:21:49 error: [POST] /api/users/getUserById >> StatusCode:: 404, Message:: Ususario no encontrado
+2022-11-16 18:21:59 error: [POST] /api/users/getUserById >> StatusCode:: 404, Message:: Ususario no encontrado
+2022-11-16 18:21:59 error: [POST] /api/users/getUserById >> StatusCode:: 404, Message:: Ususario no encontrado
+2022-11-16 18:22:20 error: [POST] /api/users/getUserById >> StatusCode:: 404, Message:: Ususario no encontrado
+2022-11-16 18:22:20 error: [POST] /api/users/getUserById >> StatusCode:: 404, Message:: Ususario no encontrado
+2022-11-16 18:22:54 error: [POST] /api/users/getUserById >> StatusCode:: 404, Message:: Ususario no encontrado
+2022-11-16 18:57:49 error: [POST] /api/users/createUser >> StatusCode:: 500, Message:: E11000 duplicate key error collection: kauel-alert-dev.users index: run_1 dup key: { run: "777.777-7" }
+2022-11-16 19:04:28 error: [POST] /api/users/createUser >> StatusCode:: 500, Message:: Cannot read property 'push' of undefined
+2022-11-16 19:07:34 error: [POST] /api/users/createUser >> StatusCode:: 500, Message:: Cannot read property 'push' of undefined
+2022-11-16 19:10:52 error: [POST] /api/users/createUser >> StatusCode:: 500, Message:: Cannot read property 'push' of undefined
+2022-11-16 19:14:44 error: [POST] /api/users/createUser >> StatusCode:: 500, Message:: Cannot read property 'length' of undefined

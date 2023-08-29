@@ -1,0 +1,4 @@
+2022-12-08 22:54:39 error: [POST] /api/survey/getSurveyByOrganizationId >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-08 22:54:39 error: [POST] /api/survey/getSurveyByOrganizationId >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-08 22:54:46 error: [POST] /api/survey/getSurveyByOrganizationId >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-08 22:54:46 error: [POST] /api/survey/getSurveyByOrganizationId >> StatusCode:: 401, Message:: Wrong authentication token

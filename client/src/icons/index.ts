@@ -1,0 +1,1 @@
+export const Logo = './assets/logo/democracia-real-logo.png'

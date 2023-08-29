@@ -1,0 +1,80 @@
+2023-08-20 21:07:15 error: uncaughtException: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.Connection.openUri (C:\Users\gorel\Documents\PDG\democracia-online\server\node_modules\mongoose\lib\connection.js:694:11)
+    at C:\Users\gorel\Documents\PDG\democracia-online\server\node_modules\mongoose\lib\index.js:351:10
+    at promiseOrCallback (C:\Users\gorel\Documents\PDG\democracia-online\server\node_modules\mongoose\lib\helpers\promiseOrCallback.js:10:12)
+    at Mongoose._promiseOrCallback (C:\Users\gorel\Documents\PDG\democracia-online\server\node_modules\mongoose\lib\index.js:1149:10)
+    at Mongoose.connect (C:\Users\gorel\Documents\PDG\democracia-online\server\node_modules\mongoose\lib\index.js:350:20)
+    at connectToDatabase (C:\Users\gorel\Documents\PDG\democracia-online\server\src\app.ts:34:12)
+    at App (C:\Users\gorel\Documents\PDG\democracia-online\server\src\app.ts:103:5)
+    at startServer (C:\Users\gorel\Documents\PDG\democracia-online\server\src\server.ts:4:8)
+    at Object.<anonymous> (C:\Users\gorel\Documents\PDG\democracia-online\server\src\server.ts:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module.m._compile (C:\Users\gorel\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1371:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\gorel\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1374:12)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+2023-08-20 21:10:21 error: uncaughtException: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.Connection.openUri (C:\Users\gorel\Documents\PDG\democracia-online\server\node_modules\mongoose\lib\connection.js:694:11)
+    at C:\Users\gorel\Documents\PDG\democracia-online\server\node_modules\mongoose\lib\index.js:351:10
+    at promiseOrCallback (C:\Users\gorel\Documents\PDG\democracia-online\server\node_modules\mongoose\lib\helpers\promiseOrCallback.js:10:12)
+    at Mongoose._promiseOrCallback (C:\Users\gorel\Documents\PDG\democracia-online\server\node_modules\mongoose\lib\index.js:1149:10)
+    at Mongoose.connect (C:\Users\gorel\Documents\PDG\democracia-online\server\node_modules\mongoose\lib\index.js:350:20)
+    at connectToDatabase (C:\Users\gorel\Documents\PDG\democracia-online\server\src\app.ts:34:12)
+    at App (C:\Users\gorel\Documents\PDG\democracia-online\server\src\app.ts:103:5)
+    at startServer (C:\Users\gorel\Documents\PDG\democracia-online\server\src\server.ts:4:8)
+    at Object.<anonymous> (C:\Users\gorel\Documents\PDG\democracia-online\server\src\server.ts:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module.m._compile (C:\Users\gorel\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1371:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\gorel\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1374:12)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+2023-08-20 21:12:36 error: uncaughtException: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.Connection.openUri (C:\Users\gorel\Documents\PDG\democracia-online\server\node_modules\mongoose\lib\connection.js:694:11)
+    at C:\Users\gorel\Documents\PDG\democracia-online\server\node_modules\mongoose\lib\index.js:351:10
+    at promiseOrCallback (C:\Users\gorel\Documents\PDG\democracia-online\server\node_modules\mongoose\lib\helpers\promiseOrCallback.js:10:12)
+    at Mongoose._promiseOrCallback (C:\Users\gorel\Documents\PDG\democracia-online\server\node_modules\mongoose\lib\index.js:1149:10)
+    at Mongoose.connect (C:\Users\gorel\Documents\PDG\democracia-online\server\node_modules\mongoose\lib\index.js:350:20)
+    at connectToDatabase (C:\Users\gorel\Documents\PDG\democracia-online\server\src\app.ts:34:12)
+    at App (C:\Users\gorel\Documents\PDG\democracia-online\server\src\app.ts:103:5)
+    at startServer (C:\Users\gorel\Documents\PDG\democracia-online\server\src\server.ts:4:8)
+    at Object.<anonymous> (C:\Users\gorel\Documents\PDG\democracia-online\server\src\server.ts:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module.m._compile (C:\Users\gorel\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1371:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\gorel\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1374:12)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+2023-08-20 21:14:03 error: uncaughtException: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.Connection.openUri (C:\Users\gorel\Documents\PDG\democracia-online\server\node_modules\mongoose\lib\connection.js:694:11)
+    at C:\Users\gorel\Documents\PDG\democracia-online\server\node_modules\mongoose\lib\index.js:351:10
+    at promiseOrCallback (C:\Users\gorel\Documents\PDG\democracia-online\server\node_modules\mongoose\lib\helpers\promiseOrCallback.js:10:12)
+    at Mongoose._promiseOrCallback (C:\Users\gorel\Documents\PDG\democracia-online\server\node_modules\mongoose\lib\index.js:1149:10)
+    at Mongoose.connect (C:\Users\gorel\Documents\PDG\democracia-online\server\node_modules\mongoose\lib\index.js:350:20)
+    at connectToDatabase (C:\Users\gorel\Documents\PDG\democracia-online\server\src\app.ts:34:12)
+    at App (C:\Users\gorel\Documents\PDG\democracia-online\server\src\app.ts:104:5)
+    at startServer (C:\Users\gorel\Documents\PDG\democracia-online\server\src\server.ts:4:8)
+    at Object.<anonymous> (C:\Users\gorel\Documents\PDG\democracia-online\server\src\server.ts:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module.m._compile (C:\Users\gorel\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1371:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\gorel\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1374:12)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+2023-08-20 21:18:25 error: [POST] /api/login >> StatusCode:: 409, Message:: Email gonzalo.orellana@kauel.com no encontrado
+2023-08-20 21:40:16 error: [POST] /api/login >> StatusCode:: 409, Message:: Email a@a.cl no encontrado
+2023-08-20 21:41:34 error: [POST] /api/login >> StatusCode:: 409, Message:: Email a@a.cl no encontrado
+2023-08-20 21:41:40 error: [POST] /api/login >> StatusCode:: 409, Message:: Email a@a.cl no encontrado
+2023-08-20 21:43:43 error: [POST] /api/login >> StatusCode:: 409, Message:: Email a@a.cl no encontrado
+2023-08-20 21:43:57 error: [POST] /api/login >> StatusCode:: 409, Message:: Email a@a.cl no encontrado
+2023-08-20 21:44:01 error: [POST] /api/login >> StatusCode:: 409, Message:: Email a@a.cl no encontrado
+2023-08-20 21:46:33 error: [POST] /api/login >> StatusCode:: 409, Message:: Contraseña incorrecta

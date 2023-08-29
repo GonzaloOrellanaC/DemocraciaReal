@@ -1,0 +1,14 @@
+.question-popover {
+    --width: 70%;
+    --max-height: calc(100vh - 100px);
+}
+.question-popover-container {
+    /* width: 100%; */
+    /* max-height: calc(100vh - 200px); */
+    /* overflow-y: auto; */
+}
+
+.question-list {
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+}

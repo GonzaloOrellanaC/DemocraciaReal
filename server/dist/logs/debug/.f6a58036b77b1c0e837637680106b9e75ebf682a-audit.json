@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\dist\\logs\\debug\\.f6a58036b77b1c0e837637680106b9e75ebf682a-audit.json",
+    "files": [
+        {
+            "date": 1670877033084,
+            "name": "C:\\Users\\gorel\\Documents\\Tesso\\DemocraciaDigital\\DemocraciaDigital\\server\\dist\\logs\\debug\\2022-12-12.log",
+            "hash": "e9a73f5326acae2140619eb81e62ff46"
+        }
+    ]
+}

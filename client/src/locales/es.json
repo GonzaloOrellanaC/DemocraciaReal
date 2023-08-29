@@ -1,0 +1,322 @@
+{
+    "routes": {
+        "home": "inicio",
+        "login": "login",
+        "registre": "registrar-usuario",
+        "forgot-password": "olvide-contrasena",
+        "register": "registrar",
+        "registre-form": "formulario-registro",
+        "users": "usuarios",
+        "user-detail": "detalles-usuario",
+        "surveys": "encuastas",
+        "my-surveys": "mis-encuestas",
+        "my-survey-detail": "detalle-encuesta",
+        "survey-detail": "detalles-encuasta",
+        "organizations": "organizaciones",
+        "organization-detail": "detalle-organizacion",
+        "survey-results": "resultados-encuesta"
+    },
+    "routesName": {
+        "home": "Inicio",
+        "login": "Login",
+        "forgot-password": "Olvidé Contraseña",
+        "register": "Registrar",
+        "users": "Usuarios",
+        "surveys": "Encuestas",
+        "my-surveys": "Mis Encuestas",
+        "organizations": "Organizaciones"
+    },
+    "login": {
+        "title": "Democracia Real",
+        "helper-email-label": "Ingrese un email válido",
+        "buttonName": "Iniciar",
+        "buttonRegistreName": "Registrar Usuario",
+        "restore-password-link": "Restaurar Contraseña"
+    },
+    "registre": {
+        "title": "Registrar nuevo usuario",
+        "helper-email-label": "Ingrese un run válido",
+        "context": "Para registrarse en la plataforma, ingrese su RUT. Verificaremos si se encuentra inscrito en nuestras bases de datos.",
+        "buttonName": "Encontrar usuario",
+        "buttonBackName": "Volver",
+        "buttonNext": "Continuar"
+    },
+    "forgot-password": {
+        "title": "Restaurar Contraseña",
+        "helper-email-label": "Ingrese un email válido",
+        "buttonName": "Restaurar",
+        "backButtonName": "Volver"
+    },
+    "home": {
+        "title": "Administración de sistema",
+        "buttons": {
+            "users": "usuarios",
+            "organizations": "organizaciones",
+            "close": "cerrar"
+        },
+        "organization-list": {
+            "title": "Lista de organizaciones",
+            "list": {
+                "id": "ID",
+                "name-org": "Nombre Org.",
+                "date-created": "Fecha Creación",
+                "date-updated": "Fecha de Actualización",
+                "action": "Acciones",
+                "list-actions": {
+                    "read": "Ver",
+                    "edit": "Editar",
+                    "delete": "Eliminar"
+                }
+            }
+        },
+        "organization-data": {
+            "title": "Datos de organización"
+        }
+    },
+    "survey": {
+        "title": "Gestion de Encuestas",
+        "buttons": {
+            "create-survey": "Crear Nueva Encuesta"
+        },
+        "survey-list": {
+            "title": "Lista de Encuestas",
+            "list": {
+                "id": "ID",
+                "description": "Descripción",
+                "date-created": "Fecha Creación",
+                "date-updated": "Fecha Actualización",
+                "status": "Estado",
+                "active-survey": "Activo",
+                "inactive-survey": "Desactivado",
+                "action": "Acciones",
+                "list-actions": {
+                    "read": "Ver",
+                    "edit": "Editar",
+                    "delete": "Eliminar"
+                }
+            }
+        }
+    },
+    "my-surveys": {
+        "title": "Mis Encuestas"
+    },
+    "my-survey-detail": {
+        "title": "Encuesta"
+    },
+    "survey-results": {
+        "title": "Resultado de encuesta"
+    },
+    "organizations": {
+        "title": "Gestión de Organizaciones",
+        "buttons": {
+            "create-org": "Crear Nueva Org."
+        },
+        "organization-list": {
+            "title": "Lista de organizaciones",
+            "list": {
+                "id": "ID",
+                "name-org": "Nombre Org.",
+                "date-created": "Fecha Creación",
+                "date-updated": "Fecha Actualización",
+                "status": "Estado",
+                "active-org": "Activado",
+                "inactive-org": "Desactivado",
+                "users": "Total Usuarios",
+                "action": "Acciones",
+                "list-actions": {
+                    "read": "Ver",
+                    "edit": "Editar",
+                    "delete": "Eliminar"
+                }
+            }
+        }
+    },
+    "survey-detail": {
+        "title": "Nueva Encuesta",
+        "title-exist": "Editar Encuates",
+        "buttons": {
+            "add-question": "Agregar Pregunta",
+            "add-alternative": "Agregar Alternativa",
+            "create-survey": "Crear encuesta",
+            "edit-survey": "Editar encuesta",
+            "cancel": "Cancelar"
+        },
+        "inputs": {
+            "description": "Descripción"
+        },
+        "inputs-name": {
+            "description": "descripción"
+        },
+        "question-list": {
+            "title": "Lista de preguntas"
+        }
+    },
+    "question": {
+        "inputs": {
+            "description": "Descripción"
+        },
+        "inputs-name": {
+            "description": "descripción"
+        }
+    },
+    "users": {
+        "title": "Gestión de Usuarios",
+        "buttons": {
+            "create-user": "Crear Nuevo Usuario",
+            "create-people": "Cargar Pre Usuarios"
+        },
+        "users-list": {
+            "title": "Lista de usuarios",
+            "list": {
+                "id": "ID",
+                "name": "Nombre",
+                "run": "Run",
+                "role": "Rol",
+                "institution": "Institución",
+                "organization": "Organización",
+                "date-created": "Fecha Creación",
+                "date-updated": "Fecha Actualización",
+                "status": "Estado",
+                "active-user": "Activado",
+                "inactive-user": "Desactivado",
+                "action": "Acciones",
+                "list-actions": {
+                    "read": "Ver",
+                    "edit": "Editar",
+                    "delete": "Eliminar"
+                }
+            }
+        },
+        "user-to-org": {
+            "create": "Enrolar usuario a"
+        }
+    },
+    "organization-detail": {
+        "buttons": {
+            "change-logo": "Cambiar Logo",
+            "create-org": "Crear Organización",
+            "edit-org": "Editar Organización",
+            "cancel": "Cancelar"
+        },
+        "inputs": {
+            "name": "Nombre Org",
+            "contact": "Teléfono",
+            "email": "Email",
+            "description": "Descripción",
+            "role": "Rol"
+        },
+        "inputs-name": {
+            "name": "nombre",
+            "contact": "teléfono",
+            "email": "email",
+            "description": "descripción"
+        },
+        "reading-org": {
+            "loading": {
+                "title": "Leyendo Org."
+            }
+        },
+        "creting-org": {
+            "loading": {
+                "title": "Creando Org."
+            },
+            "success": {
+                "title": "Creando Org.",
+                "text": "Organización ha sido creada"
+            },
+            "error": {
+                "title": "Creando Org.",
+                "text": "Un error ha ocurrido"
+            }
+        },
+        "edit-org": {
+            "loading": {
+                "title": "Editando Org."
+            },
+            "success": {
+                "title": "Editando Org.",
+                "text": "Organización ha sido editada"
+            },
+            "error": {
+                "title": "Editando Org.",
+                "text": "Un error ha ocurrido"
+            }
+        }
+    },
+    "userDetail": {
+        "buttons": {
+            "change-image-profile": "Cambiar Imagen de Perfil",
+            "createUser": "Crear Usuario",
+            "editUser": "Editar Usuario",
+            "cancel": "Cancelar"
+        },
+        "inputs": {
+            "name": "Nombre",
+            "lastname": "Apellido",
+            "phone": "Telefono",
+            "email": "Email",
+            "password": "Password",
+            "institution": "Institución",
+            "confirm-password": "Confirme Password",
+            "role": "Rol",
+            "run": "Run"
+        },
+        "inputs-name": {
+            "name": "nombre",
+            "lastname": "apellido",
+            "phone": "telefono",
+            "email": "email",
+            "institution": "institución",
+            "password": "password",
+            "confirm-password": "confirme password",
+            "role": "rol",
+            "run": "run"
+        },
+        "reading-user": {
+            "loading": {
+                "title": "Leyendo Usuario"
+            }
+        },
+        "creatingUser": {
+            "loading": {
+                "title": "Creando Usuario"
+            },
+            "success": {
+                "title": "Usuario Creado",
+                "text": "Usuario ha sido creado"
+            },
+            "error": {
+                "title": "Creando Usuario",
+                "text": "Un error ha ocurrido"
+            },
+            "confirmPasswordError" : {
+                "text": "Contraseñas no coinciden"
+            }
+        },
+        "editUser": {
+            "loading": {
+                "title": "Editando Usuario"
+            },
+            "success": {
+                "title": "Usuario Editado",
+                "text": "Usuario ha sido editado"
+            },
+            "error": {
+                "title": "Editando Usuario",
+                "text": "Un error ha ocurrido"
+            }
+        }
+    },
+    "notPermissionPage": {
+        "title": "No permitido"
+    },
+    "notFoundPage": {
+        "title": "No encontrado"
+    },
+    "translate-from-database": {
+        "SuperAdmin": "Super Administrador",
+        "seller": "Vendedor",
+        "admin": "Administrador",
+        "user": "Usuario"
+    }
+}

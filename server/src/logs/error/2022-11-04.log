@@ -1,0 +1,3 @@
+2022-11-04 14:29:56 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: ENOENT: no such file or directory, stat 'C:\Users\gorel\Documents\KauelWorks\Kauel-Alert-System\client\build\index.html'
+2022-11-04 16:11:45 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: ENOENT: no such file or directory, stat 'C:\Users\gorel\Documents\KauelWorks\Kauel-Alert-System\client\build\index.html'
+2022-11-04 23:24:43 error: [POST] /api/organizations/createOrg >> StatusCode:: 401, Message:: Wrong authentication token

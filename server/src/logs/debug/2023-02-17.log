@@ -1,0 +1,12 @@
+2023-02-17 18:58:52 info: =================================
+2023-02-17 18:58:52 info: ======= ENV: development =======
+2023-02-17 18:58:52 info: 🚀 App listening on the port 5211
+2023-02-17 18:58:52 info: =================================
+2023-02-17 20:08:47 info: [0mGET /api/organizations/getOrganizations [32m200[0m 130.764 ms - -[0m
+2023-02-17 20:08:47 info: [0mGET /api/organizations/getOrganizations [36m304[0m 73.471 ms - -[0m
+2023-02-17 20:08:58 info: [0mGET /api/organizations/getOrganizations [36m304[0m 71.433 ms - -[0m
+2023-02-17 20:08:58 info: [0mGET /api/organizations/getOrganizations [36m304[0m 72.930 ms - -[0m
+2023-02-17 20:10:28 info: [0mGET /api/organizations/getOrganizations [36m304[0m 72.950 ms - -[0m
+2023-02-17 20:10:29 info: [0mGET /api/organizations/getOrganizations [36m304[0m 77.798 ms - -[0m
+2023-02-17 20:11:31 info: [0mGET /api/organizations/getOrganizations [36m304[0m 72.965 ms - -[0m
+2023-02-17 20:11:32 info: [0mGET /api/organizations/getOrganizations [36m304[0m 75.294 ms - -[0m

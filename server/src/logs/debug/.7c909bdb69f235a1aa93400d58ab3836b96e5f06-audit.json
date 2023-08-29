@@ -1,0 +1,44 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\gorel\\Documents\\KauelWorks\\Kauel-Alert-System\\Kauel-Alert-Admin-System\\server\\src\\logs\\debug\\.7c909bdb69f235a1aa93400d58ab3836b96e5f06-audit.json",
+    "files": [
+        {
+            "date": 1667944535776,
+            "name": "C:\\Users\\gorel\\Documents\\KauelWorks\\Kauel-Alert-System\\Kauel-Alert-Admin-System\\server\\src\\logs\\debug\\2022-11-08.log",
+            "hash": "4cc634c3c05218bae3e1b8b030fa6f7e"
+        },
+        {
+            "date": 1667995291168,
+            "name": "C:\\Users\\gorel\\Documents\\KauelWorks\\Kauel-Alert-System\\Kauel-Alert-Admin-System\\server\\src\\logs\\debug\\2022-11-09.log",
+            "hash": "9a98b4a4e5b68614bdaaeec93262bb2e"
+        },
+        {
+            "date": 1668430324433,
+            "name": "C:\\Users\\gorel\\Documents\\KauelWorks\\Kauel-Alert-System\\Kauel-Alert-Admin-System\\server\\src\\logs\\debug\\2022-11-14.log",
+            "hash": "5e6b68b5ba88136855d95101db88eec1"
+        },
+        {
+            "date": 1668594760547,
+            "name": "C:\\Users\\gorel\\Documents\\KauelWorks\\Kauel-Alert-System\\Kauel-Alert-Admin-System\\server\\src\\logs\\debug\\2022-11-16.log",
+            "hash": "3043ad3448519e4512ffae0fc8aad65d"
+        },
+        {
+            "date": 1668689970028,
+            "name": "C:\\Users\\gorel\\Documents\\KauelWorks\\Kauel-Alert-System\\Kauel-Alert-Admin-System\\server\\src\\logs\\debug\\2022-11-17.log",
+            "hash": "f2815d556a783653d6386f276f0814d8"
+        },
+        {
+            "date": 1669038011614,
+            "name": "C:\\Users\\gorel\\Documents\\KauelWorks\\Kauel-Alert-System\\Kauel-Alert-Admin-System\\server\\src\\logs\\debug\\2022-11-21.log",
+            "hash": "056351f01f8b88dc376ed2925982e705"
+        },
+        {
+            "date": 1669210289767,
+            "name": "C:\\Users\\gorel\\Documents\\KauelWorks\\Kauel-Alert-System\\Kauel-Alert-Admin-System\\server\\src\\logs\\debug\\2022-11-23.log",
+            "hash": "1b807c2cccd0d106b377a64b9e3cd277"
+        }
+    ]
+}

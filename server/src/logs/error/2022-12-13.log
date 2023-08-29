@@ -1,0 +1,17 @@
+2022-12-13 20:15:56 error: [POST] /api/login >> StatusCode:: 409, Message:: Contraseña incorrecta
+2022-12-13 20:16:04 error: [POST] /api/login >> StatusCode:: 409, Message:: Contraseña incorrecta
+2022-12-13 20:16:12 error: [POST] /api/login >> StatusCode:: 409, Message:: Contraseña incorrecta
+2022-12-13 22:19:43 error: [POST] /api/survey/getSurveyById >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-13 22:19:43 error: [POST] /api/survey/getSurveyById >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-13 22:19:53 error: [POST] /api/survey/getSurveyById >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-13 22:19:53 error: [POST] /api/survey/getSurveyById >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-13 22:20:00 error: [GET] /api/survey/getSurveys >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-13 22:20:05 error: [GET] /api/survey/getSurveys >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-13 22:20:09 error: [GET] /api/organizations/getOrganizations >> StatusCode:: 500, Message:: Operation `organizations.find()` buffering timed out after 10000ms
+2022-12-13 22:20:11 error: [GET] /api/users/getAllSystemUser >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-13 22:20:16 error: [GET] /api/survey/getSurveys >> StatusCode:: 401, Message:: Wrong authentication token
+2022-12-13 22:20:26 error: [GET] /api/organizations/getOrganizations >> StatusCode:: 500, Message:: Operation `organizations.find()` buffering timed out after 10000ms
+2022-12-13 22:20:38 error: [POST] /api/login >> StatusCode:: 500, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2022-12-13 22:21:01 error: [POST] /api/login >> StatusCode:: 500, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2022-12-13 22:21:27 error: [POST] /api/login >> StatusCode:: 500, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2022-12-13 23:22:26 error: [POST] /api/login >> StatusCode:: 409, Message:: Email gonzalo.orellana@kauel.com no encontrado

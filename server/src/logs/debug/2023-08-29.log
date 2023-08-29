@@ -1,0 +1,16 @@
+2023-08-29 15:05:59 info: =================================
+2023-08-29 15:05:59 info: ======= ENV: development =======
+2023-08-29 15:05:59 info: 🚀 App listening on the port 7000
+2023-08-29 15:05:59 info: =================================
+2023-08-29 15:06:51 info: =================================
+2023-08-29 15:06:51 info: ======= ENV: development =======
+2023-08-29 15:06:51 info: 🚀 App listening on the port 6000
+2023-08-29 15:06:51 info: =================================
+2023-08-29 15:06:56 info: [0mPOST /api/login [32m200[0m 262.791 ms - -[0m
+2023-08-29 15:06:56 info: [0mGET /api/organizations/getOrganizations [32m200[0m 31.396 ms - 801[0m
+2023-08-29 15:06:56 info: [0mGET /api/users/getUsers [32m200[0m 55.614 ms - -[0m
+2023-08-29 15:06:56 info: [0mGET /api/survey/getSurveys [36m304[0m 76.181 ms - -[0m
+2023-08-29 15:07:09 info: [0mPOST /api/login [32m200[0m 79.511 ms - -[0m
+2023-08-29 15:07:10 info: [0mGET /api/organizations/getOrganizations [36m304[0m 28.479 ms - -[0m
+2023-08-29 15:07:10 info: [0mGET /api/users/getUsers [36m304[0m 44.204 ms - -[0m
+2023-08-29 15:07:10 info: [0mGET /api/survey/getSurveys [36m304[0m 53.691 ms - -[0m

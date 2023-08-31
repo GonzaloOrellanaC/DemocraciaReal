@@ -1,0 +1,17 @@
+2023-08-30 00:10:51 info: [0mGET / [32m200[0m 5.040 ms - 893[0m
+2023-08-30 00:11:37 info: =================================
+2023-08-30 00:11:37 info: ======= ENV: development =======
+2023-08-30 00:11:37 info: 🚀 App listening on the port 7000
+2023-08-30 00:11:37 info: =================================
+2023-08-30 00:23:11 info: [0mGET / [32m200[0m 30.244 ms - 893[0m
+2023-08-30 00:58:04 info: [0mGET / [32m200[0m 10.106 ms - 893[0m
+2023-08-30 01:04:41 info: [0mGET / [32m200[0m 16.006 ms - 893[0m
+2023-08-30 01:10:44 info: [0mGET /usuarios [32m200[0m 18.381 ms - 893[0m
+2023-08-30 01:10:44 info: [0mGET /static/js/main.05a5bd70.js [36m304[0m 9.229 ms - -[0m
+2023-08-30 01:10:44 info: [0mGET /static/css/main.69b8e320.css [36m304[0m 10.502 ms - -[0m
+2023-08-30 01:10:44 info: [0mGET /assets/images/image-profile.png [36m304[0m 6.499 ms - -[0m
+2023-08-30 01:10:44 info: [0mGET /assets/logo/democracia-real-logo.png [36m304[0m 6.093 ms - -[0m
+2023-08-30 01:10:44 info: [0mGET /static/js/22.31351690.chunk.js [32m200[0m 4.813 ms - 850[0m
+2023-08-30 01:10:45 info: [0mGET /static/media/Epilogue-Regular.666614487352ae23e96b.ttf [36m304[0m 4.474 ms - -[0m
+2023-08-30 01:10:45 info: [0mGET /assets/logo/democracia-real-logo.png [36m304[0m 7.695 ms - -[0m
+2023-08-30 01:10:45 info: [0mGET /static/js/272.c484980e.chunk.js [36m304[0m 3.733 ms - -[0m

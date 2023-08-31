@@ -7,8 +7,8 @@ import { useAuthContext } from '../../../context/Auth.context'
 
 const LoginPage = () => {
     const {login} = useAuthContext()
-    const [email, setEmail] = useState<string>('gonzalo.orellana@tesso.cl')
-    const [password, setPassword] = useState<string>('123456')
+    const [email, setEmail] = useState<string>('')
+    const [password, setPassword] = useState<string>('')
     const [iconLookPassw, setIconLookPassw] = useState(eyeOutline)
     const [isTouched, setIsTouched] = useState(false)
     const [isValid, setIsValid] = useState<boolean>()

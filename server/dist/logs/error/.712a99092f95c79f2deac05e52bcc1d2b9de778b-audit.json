@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/home/gonzalo/projects/democraciareal/server/dist/logs/error/.712a99092f95c79f2deac05e52bcc1d2b9de778b-audit.json",
+    "files": [
+        {
+            "date": 1693453913762,
+            "name": "/home/gonzalo/projects/democraciareal/server/dist/logs/error/2023-08-31.log",
+            "hash": "0e6fbc4223236ac808831667643fcb5c"
+        }
+    ]
+}

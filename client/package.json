@@ -77,5 +77,5 @@
     "@capacitor/cli": "4.3.0"
   },
   "description": "An Ionic project",
-  "proxy": "http://127.0.0.1:6000"
+  "proxy": "http://127.0.0.1:7000"
 }

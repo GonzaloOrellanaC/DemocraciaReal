@@ -33,7 +33,7 @@ const editSurvey = async (srv: Survey) => {
 
 const getSurveys = async () => {
     try {
-        const survey = await surveys.find().populate('users').populate('organization').populate('createdBy').populate('updatedBy')
+        const survey = await surveys.find({state: true}).populate('users').populate('organization').populate('createdBy').populate('updatedBy')
         return survey
     } catch (error) {
         
@@ -43,7 +43,7 @@ const getSurveys = async () => {
 const getSurveysByAdmins = async (organizationId:ObjectId) => {
     console.log('Desde un admin por organización')
     try {
-        const survey = await surveys.find({organization: { $in: [ {_id: organizationId} as Organization ] }}).populate('users').populate('organization').populate('createdBy').populate('updatedBy')
+        const survey = await surveys.find({organization: { $in: [ {_id: organizationId} as Organization ] }, state: true}).populate('users').populate('organization').populate('createdBy').populate('updatedBy')
         return survey
     } catch (error) {
         
@@ -52,7 +52,7 @@ const getSurveysByAdmins = async (organizationId:ObjectId) => {
 
 const getSurveyById = async (_id: ObjectId) => {
     try {
-        const survey = await surveys.findById({_id: _id}).populate('users')/* .populate('organization') */.populate('createdBy').populate('updatedBy')
+        const survey = await surveys.findById({_id: _id, state: true}).populate('users')/* .populate('organization') */.populate('createdBy').populate('updatedBy')
         return survey
     } catch (error) {
         
@@ -61,7 +61,7 @@ const getSurveyById = async (_id: ObjectId) => {
 
 const getSurveyByOrganizationId = async (_id: ObjectId) => {
     try {
-        const survey = await surveys.find({organization: {$all: [_id]}}).populate('users')
+        const survey = await surveys.find({organization: {$all: [_id]}, state: true}).populate('users')
         return survey
     } catch (error) {
         

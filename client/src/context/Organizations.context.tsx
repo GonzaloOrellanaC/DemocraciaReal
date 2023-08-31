@@ -18,13 +18,13 @@ export const OrganizationProvider = (props: any) => {
     const [institutionSelected, setInstitutionSelected] = useState()
 
     useEffect(() => {
-        if (isAuth) {
+        if (isAuth && user) {
             if (user && user.roles.length > 0)
             if (user.roles[0].name === 'SuperAdmin') {
                 getAllOrgs()
             }
         }
-    },[isAuth])
+    },[isAuth, user])
 
     useEffect(() => {
         console.log(institutions)

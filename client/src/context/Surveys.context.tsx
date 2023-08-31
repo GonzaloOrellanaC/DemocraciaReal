@@ -22,7 +22,7 @@ export const SurveysProvider = (props: any) => {
     const [surveySelected, setSurveySelected] = useState<Survey>()
 
     useEffect(() => {
-        if (isAuth) {
+        if (isAuth && user) {
             if (user && user.roles.length > 0)
             if (user.roles[0].name === 'SuperAdmin') {
                 getAllSurveys()
@@ -30,7 +30,7 @@ export const SurveysProvider = (props: any) => {
                 getMySurveys()
             }
         }
-    },[isAuth])
+    },[isAuth, user])
 
     const getAllSurveys = async () => {
         const resolve: any = await surveysRouter.getSurveys()
@@ -51,7 +51,6 @@ export const SurveysProvider = (props: any) => {
                     setSurveyByOrganizationId(surveyCache.reverse())
                 }
             })
-            /* setSurveyByOrganizationId(resolve.data) */
         }
     }
     

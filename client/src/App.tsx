@@ -33,6 +33,7 @@ import { AuthProvider, useAuthContext } from './context/Auth.context'
 import { OrganizationProvider } from './context/Organizations.context'
 import { UsersProvider } from './context/Users.context'
 import { SurveysProvider } from './context/Surveys.context'
+import { RolesProvider } from './context/Roles.context'
 
 setupIonicReact()
 
@@ -43,7 +44,9 @@ const ReactIonApp = () => {
         <OrganizationProvider>
           <UsersProvider>
             <SurveysProvider>
-              <RouterApp />
+              <RolesProvider>
+                <RouterApp />
+              </RolesProvider>
             </SurveysProvider>
           </UsersProvider>
         </OrganizationProvider>

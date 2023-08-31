@@ -14,7 +14,7 @@ const UserPopover = ({trigger, popover, popoverOpen, activateUserPopover}:{trigg
                     <img src='./assets/images/image-profile.png' width={100} style={{ borderRadius: '50%' }} alt={'profile'} />
                     <br />
                     <h3>{user?.name} {user?.lastName}</h3>
-                    <h4>{roleNameResolve(user ? user.roles[0].name : '')}</h4>
+                    <h4>{roleNameResolve((user && user.roles[0]) ? user.roles[0].name : '')}</h4>
                     {
                         (user?.organization[0])
                         &&

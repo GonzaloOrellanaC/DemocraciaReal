@@ -10,11 +10,15 @@ import { organizationRouter, roleRouter, usersRouter } from "../../../router"
 import { format } from "rut.js"
 import socketConnection from "../../../connections/socket.connection"
 import logos from "../../../general/logos"
+import { useRolesContext } from "../../../context/Roles.context"
 
 const UserDetailContainer = ({org, closeModal, isRegistre}:{org?:Organization, closeModal?: () => void, isRegistre?: boolean}) => {
+    /* const {roles} = useRolesContext() */
+    const {getRolesByOrg} = useRolesContext()
     const id: {id: string} = useParams()
     const history = useHistory()
     const [profileImage, setProfileImage] = useState<string>('./assets/images/image-profile.png')
+    const [userData, setUserData] = useState<User>()
     const [name, setName] = useState<string>('')
     const [lastName, setLastName] = useState<string>('')
     const [run, setRun] = useState<string>('')
@@ -37,43 +41,69 @@ const UserDetailContainer = ({org, closeModal, isRegistre}:{org?:Organization, c
             initFromData(id.id)
         } else if (!isRegistre) {
             setProfileImage('./assets/images/image-profile.png')
-            init()
+            /* init() */
         } else if (isRegistre) {
             const rutCache = localStorage.getItem('rut')
             setRun(rutCache ? rutCache : '')
             getOrganization()
         }
     },[])
+
+    useEffect(() => {
+        if (userData) {
+
+        }
+    },[userData])
+
     const initFromData = async (id: string) => {
-        /* console.log(id) */
         const resolve = await usersRouter.getUserById(id)
-        /* console.log(resolve.data) */
         const user : User = resolve.data
-        init(user)
+        setUserData(user)
     }
     const changeProfileImage = () => {
         alert('En desarrollo')
     }
-    const init = (user?: User) => {
-        /* console.log(user) */
-        return new Promise<boolean>(async resolve => {
-            const state : boolean = org ? true : false
-            /* console.log(user?.organization[0]) */
-            const res = (org) ? await roleRouter.getRolesByOrg(org._id) : ((user?.organization[0]) ? await roleRouter.getRolesByOrg(user?.organization[0]._id) : await roleRouter.getRolesAdmin())
-            /* console.log(res.data) */
-            setRoles(res.data)
-            if (user && res.data) {
-                setProfileImage(user.profileImage ? user.profileImage : profileImage)
-                setName(user.name)
-                setLastName(user.lastName)
-                setRun(user.run)
-                setEmail(user.email)
-                setPhone(user.phone)
-                setRole(user.roles[0]._id)
+
+
+    useEffect(() => {
+        if (userData) {
+            init(userData)
+        }
+    },[userData])
+
+    useEffect(() => {
+        console.log(org)
+        if (org) {
+            getRoles()
+        }
+    },[org])
+
+    useEffect(() => {
+        if (roles.length > 0) {
+            if (userData) {
+                setProfileImage(userData.profileImage ? userData.profileImage : profileImage)
+                setName(userData.name)
+                setLastName(userData.lastName)
+                setRun(userData.run)
+                setEmail(userData.email)
+                setPhone(userData.phone)
+                setRole(userData.roles[0]._id)
                 setOpenLoading(false)
             }
-            resolve(state)
-        })
+        }
+    },[roles])
+
+    const getRoles = async () => {
+        let res: any
+        if (org) {
+            res = await getRolesByOrg(org)
+            setRoles(res)
+        }
+    }
+
+    const init = async (user: User) => {
+        const res = (org) ? await roleRouter.getRolesByOrg(org._id) : ((user?.organization[0]) ? await roleRouter.getRolesByOrg(user?.organization[0]._id) : await roleRouter.getRolesAdmin())
+        setRoles(res.data)
     }
     const getOrganization = async () => {
         const response = await organizationRouter.readAllOrgs()
@@ -289,7 +319,7 @@ const UserDetailContainer = ({org, closeModal, isRegistre}:{org?:Organization, c
                                     {t('userDetail:inputs:role').toUpperCase()}*
                                 </IonLabel>
                                 <IonItem fill='outline' counter={true}>
-                                    <IonSelect value={role} onIonChange={(e) => { setRole(e.detail.value) }} interface={'popover'} name={t('userDetail:inputs-names:role')}>
+                                    <IonSelect value={role} onIonChange={(e) => { setRole(e.detail.value) }} interface={'alert'} name={t('userDetail:inputs-names:role')}>
                                         {
                                             roles.map((rol, i) => {
                                                 return (

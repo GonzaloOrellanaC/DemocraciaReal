@@ -18,13 +18,13 @@ export const UsersProvider = (props: any) => {
     const [userSelected, setUserSelected] = useState<User>()
 
     useEffect(() => {
-        if (isAuth) {
+        if (isAuth && user) {
             if (user && user.roles.length > 0)
             if (user.roles[0].name === 'SuperAdmin') {
                 getAllUsers()
             }
         }
-    },[isAuth])
+    },[isAuth, user])
 
     const getAllUsers = async () => {
         const resolve = await usersRouter.getUsers()

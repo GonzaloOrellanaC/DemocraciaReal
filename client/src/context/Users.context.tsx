@@ -22,6 +22,8 @@ export const UsersProvider = (props: any) => {
             if (user && user.roles.length > 0)
             if (user.roles[0].name === 'SuperAdmin') {
                 getAllUsers()
+            } else {
+                getUsers()
             }
         }
     },[isAuth, user])
@@ -29,6 +31,13 @@ export const UsersProvider = (props: any) => {
     const getAllUsers = async () => {
         const resolve = await usersRouter.getUsers()
         setUsers(resolve.data)
+    }
+
+    const getUsers = async () => {
+        if (user) {
+            const resolve = await usersRouter.getUsersByOrg(user.organization[0]._id)
+            setUsers(resolve.data)
+        }
     }
 
     const value = {

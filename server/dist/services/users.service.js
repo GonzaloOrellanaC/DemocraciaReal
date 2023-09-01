@@ -65,8 +65,8 @@ const createAdminSysUser = async (userData, locale = configs_1.env.locale) => {
     if (findUser)
         throw new HttpException_1.HttpException(409, (0, i18n_1.__)({ phrase: 'Email {{email}} already exists', locale }, { email: userData.email }));
     const hashedPassword = await bcrypt_1.default.hash(userData.password, 10);
-    const users = await findAllUser();
-    userData.idUser = users.length + 1;
+    const usersTotal = await user.countDocuments();
+    userData.idUser = usersTotal + 1;
     const createUserData = await user.create(Object.assign(Object.assign({}, userData), { password: hashedPassword }));
     return createUserData;
 };
@@ -77,8 +77,8 @@ const createUser = async (userData, locale = configs_1.env.locale) => {
     if (findUser)
         throw new HttpException_1.HttpException(409, (0, i18n_1.__)({ phrase: 'Email {{email}} already exists', locale }, { email: userData.email }));
     const hashedPassword = await bcrypt_1.default.hash(userData.password, 10);
-    const users = await user.find();
-    userData.idUser = users.length + 1;
+    const usersTotal = await user.countDocuments();
+    userData.idUser = usersTotal + 1;
     const createUserData = await user.create(Object.assign(Object.assign({}, userData), { password: hashedPassword }));
     return createUserData;
 };

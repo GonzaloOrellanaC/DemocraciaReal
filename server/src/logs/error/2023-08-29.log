@@ -1,0 +1,7 @@
+2023-08-29 19:42:42 error: [POST] /api/login >> StatusCode:: 409, Message:: Contraseña incorrecta
+2023-08-29 19:43:02 error: [POST] /api/login >> StatusCode:: 409, Message:: Contraseña incorrecta
+2023-08-29 19:43:25 error: [POST] /api/login >> StatusCode:: 409, Message:: Email gonzalo.orellana@kauel.com no encontrado
+2023-08-29 20:51:13 error: [POST] /api/login >> StatusCode:: 500, Message:: Cast to ObjectId failed for value "" (type string) at path "_id" for model "Organization"
+2023-08-29 21:19:32 error: [POST] /api/login >> StatusCode:: 409, Message:: Email gonzalo.orellana@tesso.cl no encontrado
+2023-08-29 21:19:35 error: [POST] /api/login >> StatusCode:: 409, Message:: Email gonzalo.orellana@tesso.cl no encontrado
+2023-08-29 23:32:16 error: [POST] /api/login >> StatusCode:: 409, Message:: Contraseña incorrecta

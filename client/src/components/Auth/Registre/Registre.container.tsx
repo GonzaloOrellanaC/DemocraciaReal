@@ -1,7 +1,7 @@
 import { IonButton, IonContent, IonIcon, IonInput, IonItem, IonLabel, IonNote } from "@ionic/react"
 import { t } from "i18next"
 import { arrowBack, logoFacebook, logoGoogle, mail } from "ionicons/icons"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useHistory } from "react-router"
 import { format, validate } from 'rut.js'
 import preUsersRouter from "../../../router/pre-users.router"
@@ -12,6 +12,10 @@ const RegistreContainer = () => {
     const [isValid, setIsValid] = useState<boolean>()
     const [rut, setRut] = useState<string>('')
     const [haveUser, setHaveUser] = useState<boolean>(false)
+    useEffect(() => {
+        const url = window.location.href
+        console.log(url)
+    },[])
     const sendRut = async () => {
         const response = await preUsersRouter.findPreUserByRun(rut)
         /* console.log(response.data) */
@@ -66,14 +70,14 @@ const RegistreContainer = () => {
             <IonButton hidden={haveUser} expand={'block'} onClick={sendRut}>
                 {t('registre:buttonName')}
             </IonButton> */}
-            <IonButton color={'danger'} expand={'block'}>
+            {/* <IonButton color={'danger'} expand={'block'}>
                 <IonIcon style={{ marginRight: 10 }} icon={logoGoogle}/> Google
             </IonButton>
             <br />
             <IonButton style={{ '--background': '#4267B2' }} expand={'block'}>
                 <IonIcon style={{ marginRight: 10 }} icon={logoFacebook}/> Facebook
             </IonButton>
-            <br />
+            <br /> */}
             <IonButton color={'secondary'} expand={'block'} onClick={() => { history.push(`/${t('routes:registre-form')}`)}}>
                 <IonIcon style={{ marginRight: 10 }} icon={mail}/> Con su email
             </IonButton>

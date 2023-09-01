@@ -74,8 +74,8 @@ const createAdminSysUser = async (userData: User, locale: string = env.locale) =
         )
 
     const hashedPassword = await bcrypt.hash(userData.password, 10)
-    const users: User[] = await findAllUser()
-    userData.idUser = users.length + 1
+    const usersTotal: number = await user.countDocuments()
+    userData.idUser = usersTotal + 1
     const createUserData: User = await user.create({ ...userData, password: hashedPassword })
     return createUserData
 }
@@ -90,8 +90,8 @@ const createUser = async (userData: User, locale: string = env.locale) => {
         )
 
     const hashedPassword = await bcrypt.hash(userData.password, 10)
-    const users: User[] = await user.find()
-    userData.idUser = users.length + 1
+    const usersTotal: number = await user.countDocuments()
+    userData.idUser = usersTotal + 1
     const createUserData: User = await user.create({ ...userData, password: hashedPassword })
     return createUserData
 }

@@ -1,0 +1,38 @@
+2023-08-31 11:46:39 info: =================================
+2023-08-31 11:46:39 info: ======= ENV: development =======
+2023-08-31 11:46:39 info: 🚀 App listening on the port 7000
+2023-08-31 11:46:39 info: =================================
+2023-08-31 11:46:40 info: [0mGET /api/organizations/getOrganizations [32m200[0m 79.098 ms - 743[0m
+2023-08-31 11:46:41 info: [0mGET /api/survey/getSurveys [32m200[0m 199.639 ms - -[0m
+2023-08-31 11:46:41 info: [0mGET /api/users/getUsers [32m200[0m 181.919 ms - -[0m
+2023-08-31 11:46:53 info: [0mPOST /api/login [32m200[0m 342.049 ms - -[0m
+2023-08-31 11:46:53 info: [0mGET /api/roles/getRolesAdmin [32m200[0m 111.992 ms - 892[0m
+2023-08-31 11:46:54 info: [0mGET /api/organizations/getOrganizations [36m304[0m 105.590 ms - -[0m
+2023-08-31 11:46:54 info: [0mGET /api/users/getUsers [32m200[0m 168.636 ms - -[0m
+2023-08-31 11:46:54 info: [0mGET /api/survey/getSurveys [36m304[0m 190.937 ms - -[0m
+2023-08-31 11:46:54 info: [0mGET /api/organizations/getOrganizations [36m304[0m 69.881 ms - -[0m
+2023-08-31 11:46:54 info: [0mGET /api/users/getUsers [36m304[0m 129.664 ms - -[0m
+2023-08-31 11:46:54 info: [0mGET /api/survey/getSurveys [36m304[0m 138.812 ms - -[0m
+2023-08-31 11:47:00 info: [0mPOST /api/users/getUserById [32m200[0m 140.976 ms - -[0m
+2023-08-31 11:47:00 info: [0mPOST /api/users/getUserById [32m200[0m 137.869 ms - -[0m
+2023-08-31 11:47:00 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 68.490 ms - 712[0m
+2023-08-31 11:47:12 error: [POST] /api/login >> StatusCode:: 409, Message:: Contraseña incorrecta
+2023-08-31 11:47:12 info: [0mPOST /api/login [33m409[0m 182.704 ms - 36[0m
+2023-08-31 11:47:21 info: [0mPOST /api/login [32m200[0m 187.293 ms - -[0m
+2023-08-31 11:47:21 info: [0mPOST /api/survey/getSurveyByOrganizationId [32m200[0m 64.507 ms - 39[0m
+2023-08-31 11:47:21 info: [0mPOST /api/survey/getSurveyByOrganizationId [32m200[0m 62.953 ms - 39[0m
+2023-08-31 11:48:16 info: [0mGET /favicon.ico [32m200[0m 12.353 ms - 893[0m
+2023-08-31 11:48:23 info: [0mGET /favicon.ico [36m304[0m 1.599 ms - -[0m
+2023-08-31 12:04:57 info: [0mPOST /api/survey/getSurveyByOrganizationId [32m200[0m 76.030 ms - 39[0m
+2023-08-31 12:04:57 info: [0mPOST /api/survey/getSurveyByOrganizationId [32m200[0m 77.202 ms - 39[0m
+2023-08-31 12:04:57 info: [0mPOST /api/users/getUsersByOrg [32m200[0m 139.458 ms - -[0m
+2023-08-31 12:08:35 info: =================================
+2023-08-31 12:08:35 info: ======= ENV: development =======
+2023-08-31 12:08:35 info: 🚀 App listening on the port 7000
+2023-08-31 12:08:35 info: =================================
+2023-08-31 12:08:44 info: [0mPOST /api/survey/getSurveyByOrganizationId [32m200[0m 214.430 ms - 39[0m
+2023-08-31 12:08:44 info: [0mPOST /api/users/getUsersByOrg [32m200[0m 169.430 ms - -[0m
+2023-08-31 12:08:50 info: [0mPOST /api/users/getUserById [32m200[0m 168.702 ms - -[0m
+2023-08-31 12:08:50 info: [0mPOST /api/users/getUserById [32m200[0m 154.612 ms - -[0m
+2023-08-31 12:08:50 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 69.522 ms - 712[0m
+2023-08-31 12:08:50 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 70.464 ms - 712[0m

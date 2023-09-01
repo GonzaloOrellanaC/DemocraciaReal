@@ -1,0 +1,19 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/home/gonzalo/projects/democraciareal/server/src/logs/error/.21a0c7a63b88003063bf467e936dfffd095757fd-audit.json",
+    "files": [
+        {
+            "date": 1693337231429,
+            "name": "/home/gonzalo/projects/democraciareal/server/src/logs/error/2023-08-29.log",
+            "hash": "60a81fa9e7dc9948fb1ae5f63b0d1cc4"
+        },
+        {
+            "date": 1693354276190,
+            "name": "/home/gonzalo/projects/democraciareal/server/src/logs/error/2023-08-30.log",
+            "hash": "b1b498d7928abca89d8ba0e66f727f2a"
+        }
+    ]
+}

@@ -5,6 +5,10 @@ const userSchema = new mongoose_1.Schema({
     idUser: {
         type: Number
     },
+    nickName: {
+        type: String,
+        required: [true, 'Nickname is required']
+    },
     name: {
         type: String,
         required: [true, 'Name is required']
@@ -19,7 +23,7 @@ const userSchema = new mongoose_1.Schema({
     },
     run: {
         type: String,
-        required: [true, 'Run is required'],
+        /* required: [false, 'Run is required'], */
         unique: true
     },
     phone: {

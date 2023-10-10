@@ -103,7 +103,7 @@ const LoginPage = () => {
                     </IonButton>
                 </form>
                 <br />
-                <IonButton color={'secondary'} expand={'block'} onClick={() => { history.push(`/${t('routes:registre')}`) }}>
+                <IonButton color={'danger'} expand={'block'} onClick={() => { history.push(`/${t('routes:registre')}`) }}>
                     {t('login:buttonRegistreName')}
                 </IonButton>
                 <br />

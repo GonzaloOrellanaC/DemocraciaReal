@@ -4,6 +4,7 @@ import { Organization, Role } from "./Role.interface"
 export interface User {
     _id: string
     idUser: number
+    nickName: string
     name: string
     lastName: string
     secondLastName: string

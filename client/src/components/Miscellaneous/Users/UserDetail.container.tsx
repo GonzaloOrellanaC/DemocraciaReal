@@ -11,9 +11,13 @@ import { format } from "rut.js"
 import socketConnection from "../../../connections/socket.connection"
 import logos from "../../../general/logos"
 import { useRolesContext } from "../../../context/Roles.context"
+import { Logo } from "../../../icons"
+import VotBGComponent from "../../Elements/Vote-BG.component"
+import { useAuthContext } from "../../../context/Auth.context"
 
-const UserDetailContainer = ({org, closeModal, isRegistre}:{org?:Organization, closeModal?: () => void, isRegistre?: boolean}) => {
+const UserDetailContainer = ({/* org,  */closeModal, isRegistre}:{/* org?:Organization,  */closeModal?: () => void, isRegistre?: boolean}) => {
     /* const {roles} = useRolesContext() */
+    const {org} = useAuthContext()
     const {getRolesByOrg} = useRolesContext()
     const id: {id: string} = useParams()
     const history = useHistory()
@@ -22,6 +26,7 @@ const UserDetailContainer = ({org, closeModal, isRegistre}:{org?:Organization, c
     const [name, setName] = useState<string>('')
     const [lastName, setLastName] = useState<string>('')
     const [run, setRun] = useState<string>('')
+    const [nickName, setNickName] = useState<string>('')
     const [email, setEmail] = useState<string>('')
     const [phone, setPhone] = useState<string>('')
     const [role, setRole] = useState<string>()
@@ -46,6 +51,14 @@ const UserDetailContainer = ({org, closeModal, isRegistre}:{org?:Organization, c
             const rutCache = localStorage.getItem('rut')
             setRun(rutCache ? rutCache : '')
             getOrganization()
+        }
+        const url = window.location.href
+        /* console.log(url) */
+        if (url.includes('app.democraciareal.cl')) {
+            setOrganization('64ee5dd60149073ae51c5124')
+        }
+        if (url.includes(`/${t('routes:registre-form')}`)) {
+            setRole('64ee5dd60149073ae51c512a')
         }
     },[])
 
@@ -72,7 +85,7 @@ const UserDetailContainer = ({org, closeModal, isRegistre}:{org?:Organization, c
     },[userData])
 
     useEffect(() => {
-        console.log(org)
+        /* console.log(org) */
         if (org) {
             getRoles()
         }
@@ -113,7 +126,7 @@ const UserDetailContainer = ({org, closeModal, isRegistre}:{org?:Organization, c
         if (
             name &&
             lastName &&
-            run &&
+            nickName &&
             email
         ) {
             const user = {} as User
@@ -141,6 +154,7 @@ const UserDetailContainer = ({org, closeModal, isRegistre}:{org?:Organization, c
             user.lastName = lastName
             user.run = run
             user.phone = phone
+            user.nickName = nickName
             if (!isRegistre) {
                 user.roles = role ? roleSelected : []
             } else {
@@ -236,11 +250,11 @@ const UserDetailContainer = ({org, closeModal, isRegistre}:{org?:Organization, c
                 <IonRow>
                     {isRegistre && <IonCol size={'12'}>
                         <div className="login-title">
-                            <img src={logos.logo} width={70} alt={'logo'} />
+                            <img src={Logo} width={70} alt={'logo'} />
                             <h1 style={{fontSize:32}}><strong>Registro de usuario</strong></h1>
                         </div>
                     </IonCol>}
-                    {!isRegistre && <IonCol sizeXl='3' sizeLg='4' sizeMd='12' sizeSm='12' sizeXs='12'>
+                    {!isRegistre && <IonCol size={'12'}>
                         <div className='organization-detail-logo-column'>
                             <img src={profileImage} alt='logo' className='organization-detail-logo' />
                             <br />
@@ -250,182 +264,214 @@ const UserDetailContainer = ({org, closeModal, isRegistre}:{org?:Organization, c
                             </IonButton>
                         </div>
                     </IonCol>}
-                    <IonCol sizeXl={!isRegistre ? '9' : '12'} sizeLg={!isRegistre ? '8' : '12'} sizeMd={'12'} sizeSm='12' sizeXs='12'>
+                </IonRow>
+                <IonRow>
+                    <IonCol sizeXl='2' sizeLg='2' sizeMd='0' sizeSm='0' sizeXs='0'>
+
+                    </IonCol>
+                    <IonCol sizeLg={'6'}>
                         <IonRow>
-                            <IonCol sizeXl='3' sizeLg='4' sizeMd='6' sizeSm='12' sizeXs='12'>
-                                <p>(*) Datos obligatorios</p>
+                            <IonCol sizeXl={!isRegistre ? '9' : '12'} sizeLg={!isRegistre ? '8' : '12'} sizeMd={'12'} sizeSm='12' sizeXs='12'>
+                                <IonRow>
+                                    <IonCol sizeXl='6' sizeLg='6' sizeMd='6' sizeSm='12' sizeXs='12'>
+                                        <p>(*) Datos obligatorios</p>
+                                    </IonCol>
+                                </IonRow>
+                                <IonRow>
+                                    <IonCol sizeXl='6' sizeLg='6' sizeMd='6' sizeSm='12' sizeXs='12'>
+                                        <IonLabel className='item-user-label'>
+                                            {t('nickName').toUpperCase()}*
+                                        </IonLabel>
+                                        <IonItem fill='outline' counter={true}>
+                                            <IonInput
+                                                /* disabled={isRegistre} */
+                                                value={nickName}
+                                                maxlength={13}
+                                                onIonChange={(e) => { setNickName(e.target.value as string) }}
+                                                type='text'
+                                                name={t('nickName')}
+                                            />
+                                        </IonItem>
+                                    </IonCol>
+                                </IonRow>
+                                <IonRow>
+                                    <IonCol sizeXl='6' sizeLg='6' sizeMd='6' sizeSm='12' sizeXs='12'>
+                                        <IonLabel className='item-user-label'>
+                                            {t('userDetail:inputs:name').toUpperCase()}*
+                                        </IonLabel>
+                                        <IonItem fill='outline' counter={true}>
+                                            <IonInput
+                                                value={name}
+                                                maxlength={15}
+                                                onIonChange={(e) => { setName(e.target.value as string) }}
+                                                type='text'
+                                                name={t('userDetail:inputs-names:name')}
+                                            />
+                                        </IonItem>
+                                    </IonCol>
+                                    <IonCol sizeXl='6' sizeLg='6' sizeMd='6' sizeSm='12' sizeXs='12'>
+                                        <IonLabel className='item-user-label'>
+                                            {t('userDetail:inputs:lastname').toUpperCase()}*
+                                        </IonLabel>
+                                        <IonItem fill='outline' counter={true}>
+                                            <IonInput
+                                                value={lastName}
+                                                maxlength={15}
+                                                onIonChange={(e) => { setLastName(e.target.value as string) }}
+                                                type='text'
+                                                name={t('userDetail:inputs-names:lastname')}
+                                            />
+                                        </IonItem>
+                                    </IonCol>
+                                    {/* <IonCol sizeXl='4' sizeLg='4' sizeMd='6' sizeSm='12' sizeXs='12'>
+                                        <IonLabel className='item-user-label'>
+                                            {t('userDetail:inputs:run').toUpperCase()}
+                                        </IonLabel>
+                                        <IonItem fill='outline' counter={true}>
+                                            <IonInput
+                                                value={run}
+                                                maxlength={13}
+                                                onIonChange={(e) => { setRunFormat(e.target.value as string) }}
+                                                type='text'
+                                                name={t('userDetail:inputs-names:run')}
+                                            />
+                                        </IonItem>
+                                    </IonCol> */}
+                                </IonRow>
+                                <IonRow>
+                                    <IonCol sizeXl='6' sizeLg='6' sizeMd='6' sizeSm='12' sizeXs='12'>
+                                        <IonLabel className='item-user-label'>
+                                            {t('userDetail:inputs:phone').toUpperCase()}
+                                        </IonLabel>
+                                        <IonItem fill='outline' counter={true}>
+                                            <IonInput
+                                                value={phone}
+                                                maxlength={15}
+                                                onIonChange={(e) => { setPhone(e.target.value as string) }}
+                                                type={'tel'}
+                                                name={t('userDetail:inputs-names:phone')}
+                                            />
+                                        </IonItem>
+                                    </IonCol>
+                                    <IonCol sizeXl='6' sizeLg='12' sizeMd='12' sizeSm='12' sizeXs='12'>
+                                        <IonLabel className='item-user-label' position={'floating'} >
+                                            {t('userDetail:inputs:email').toUpperCase()}*
+                                        </IonLabel>
+                                        <IonItem fill='outline' counter={true}>
+                                            <IonInput
+                                                value={email}
+                                                type={'email'}
+                                                maxlength={50}
+                                                onIonChange={(e) => { setEmail(e.target.value as string) }}
+                                                name={t('userDetail:inputs-names:email')}
+                                            />
+                                        </IonItem>
+                                    </IonCol>
+                                </IonRow>
+                                <IonRow>
+                                    {!isRegistre && <IonCol sizeXl='6' sizeLg='6' sizeMd='6' sizeSm='12' sizeXs='12'>
+                                        <IonLabel className='item-user-label'>
+                                            {t('userDetail:inputs:role').toUpperCase()}*
+                                        </IonLabel>
+                                        <IonItem fill='outline' counter={true}>
+                                            <IonSelect value={role} onIonChange={(e) => { setRole(e.detail.value) }} interface={'alert'} name={t('userDetail:inputs-names:role')}>
+                                                {
+                                                    roles.map((rol, i) => {
+                                                        return (
+                                                            <IonSelectOption value={rol._id} key={i}>
+                                                                {translateRole(rol.name)}
+                                                            </IonSelectOption>
+                                                        )
+                                                    })
+                                                }
+                                            </IonSelect>
+                                        </IonItem>
+                                    </IonCol>}
+                                    {/* {isRegistre && <IonCol sizeXl='6' sizeLg='6' sizeMd='6' sizeSm='12' sizeXs='12'>
+                                        <IonLabel className='item-user-label'>
+                                            {t('userDetail:inputs:institution').toUpperCase()}*
+                                        </IonLabel>
+                                        <IonItem fill='outline' counter={true}>
+                                            <IonSelect value={organization} interfaceOptions={
+                                                {
+                                                    header: 'Seleccione la institución',
+                                                    subHeader: 'Elija a la cual pertenece',
+                                                    message: 'Elija solo una',
+                                                    cssClass: 'select-org',
+                                                    translucent: true
+                                                }
+                                            } onIonChange={(e) => { setOrganization(e.detail.value) }} interface={'alert'} name={t('userDetail:inputs-names:role')}>
+                                                {
+                                                    institutions.map((organization, i) => {
+                                                        return (
+                                                            <IonSelectOption value={organization._id} key={i}>
+                                                                {organization.name}
+                                                            </IonSelectOption>
+                                                        )
+                                                    })
+                                                }
+                                            </IonSelect>
+                                        </IonItem>
+                                    </IonCol>} */}
+                                    <IonCol hidden={id.id ? true : false} sizeXl='4' sizeLg='6' sizeMd='6' sizeSm='12' sizeXs='12'>
+                                        <IonLabel className='item-user-label' position={'floating'} >
+                                            {t('userDetail:inputs:password').toUpperCase()}*
+                                        </IonLabel>
+                                        <IonItem fill='outline' counter>
+                                            <IonInput
+                                                value={password}
+                                                type={passwordType}
+                                                maxlength={10}
+                                                onIonChange={(e) => { setPassword(e.target.value as string) }}
+                                                name={t('userDetail:inputs-names:password')}
+                                            />
+                                            <IonButton fill={'clear'} size={'default'} onClick={() => { (passwordType === 'text') ? setPasswordType('password') : setPasswordType('text') }}>
+                                                <IonIcon icon={(passwordType === 'text') ? eyeOutline : eyeOffOutline} />
+                                            </IonButton>
+                                        </IonItem>
+                                    </IonCol>
+                                    <IonCol hidden={id.id ? true : false} sizeXl='4' sizeLg='6' sizeMd='6' sizeSm='12' sizeXs='12'>
+                                        <IonLabel className='item-user-label' position={'floating'} >
+                                            {t('userDetail:inputs:confirm-password').toUpperCase()}*
+                                        </IonLabel>
+                                        <IonItem fill='outline' counter>
+                                            <IonInput
+                                                value={confirmPassword}
+                                                type={confirmPasswordType}
+                                                maxlength={10}
+                                                onIonChange={(e) => { setConfirmPassword(e.target.value as string) }}
+                                                name={t('userDetail:inputs-names:confirm-password')}
+                                            />
+                                            <IonButton fill={'clear'} size={'default'} onClick={() => { (confirmPasswordType === 'text') ? setConfirmPasswordType('password') : setConfirmPasswordType('text') }}>
+                                                <IonIcon icon={(confirmPasswordType === 'text') ? eyeOutline : eyeOffOutline} />
+                                            </IonButton>
+                                        </IonItem>
+                                    </IonCol>
+                                </IonRow>
+                                <IonRow>
+                                    <IonCol sizeXl='3' sizeLg='4' sizeMd='6' sizeSm='12' sizeXs='12'>
+                                        <p>(*) Datos obligatorios</p>
+                                    </IonCol>
+                                </IonRow>
+                                <IonRow>
+                                    <IonCol sizeXl='3' sizeLg='4' sizeMd='6' sizeSm='12' sizeXs='12'>
+                                        <IonButton expand={'block'} className='button-userDetail' fill={'outline'} color={'secondary'} onClick={saveUser}>
+                                            <IonIcon icon={add} style={{marginRight: 10}} />
+                                            {(id.id) ? t('userDetail:buttons:editUser') : t('userDetail:buttons:createUser')}
+                                        </IonButton>
+                                    </IonCol>
+                                    <IonCol sizeXl='3' sizeLg='4' sizeMd='6' sizeSm='12' sizeXs='12'>
+                                        <IonButton expand={'block'} className='button-userDetail' fill={'outline'} color={'danger'} onClick={back}>
+                                            <IonIcon icon={close} style={{marginRight: 10}} />
+                                            {t('userDetail:buttons:cancel')}
+                                        </IonButton>
+                                    </IonCol>
+                                </IonRow>
                             </IonCol>
                         </IonRow>
-                        <IonRow>
-                            <IonCol sizeXl='4' sizeLg='4' sizeMd='6' sizeSm='12' sizeXs='12'>
-                                <IonLabel className='item-user-label'>
-                                    {t('userDetail:inputs:name').toUpperCase()}*
-                                </IonLabel>
-                                <IonItem fill='outline' counter={true}>
-                                    <IonInput
-                                        value={name}
-                                        maxlength={15}
-                                        onIonChange={(e) => { setName(e.target.value as string) }}
-                                        type='text'
-                                        name={t('userDetail:inputs-names:name')}
-                                    />
-                                </IonItem>
-                            </IonCol>
-                            <IonCol sizeXl='4' sizeLg='4' sizeMd='6' sizeSm='12' sizeXs='12'>
-                                <IonLabel className='item-user-label'>
-                                    {t('userDetail:inputs:lastname').toUpperCase()}*
-                                </IonLabel>
-                                <IonItem fill='outline' counter={true}>
-                                    <IonInput
-                                        value={lastName}
-                                        maxlength={15}
-                                        onIonChange={(e) => { setLastName(e.target.value as string) }}
-                                        type='text'
-                                        name={t('userDetail:inputs-names:lastname')}
-                                    />
-                                </IonItem>
-                            </IonCol>
-                            <IonCol sizeXl='4' sizeLg='4' sizeMd='6' sizeSm='12' sizeXs='12'>
-                                <IonLabel className='item-user-label'>
-                                    {t('userDetail:inputs:run').toUpperCase()}
-                                </IonLabel>
-                                <IonItem fill='outline' counter={true}>
-                                    <IonInput
-                                        disabled={isRegistre}
-                                        value={run}
-                                        maxlength={13}
-                                        onIonChange={(e) => { setRunFormat(e.target.value as string) }}
-                                        type='text'
-                                        name={t('userDetail:inputs-names:run')}
-                                    />
-                                </IonItem>
-                            </IonCol>
-                            <IonCol sizeXl='6' sizeLg='6' sizeMd='6' sizeSm='12' sizeXs='12'>
-                                <IonLabel className='item-user-label'>
-                                    {t('userDetail:inputs:phone').toUpperCase()}
-                                </IonLabel>
-                                <IonItem fill='outline' counter={true}>
-                                    <IonInput
-                                        value={phone}
-                                        maxlength={15}
-                                        onIonChange={(e) => { setPhone(e.target.value as string) }}
-                                        type={'tel'}
-                                        name={t('userDetail:inputs-names:phone')}
-                                    />
-                                </IonItem>
-                            </IonCol>
-                            {!isRegistre && <IonCol sizeXl='6' sizeLg='6' sizeMd='6' sizeSm='12' sizeXs='12'>
-                                <IonLabel className='item-user-label'>
-                                    {t('userDetail:inputs:role').toUpperCase()}*
-                                </IonLabel>
-                                <IonItem fill='outline' counter={true}>
-                                    <IonSelect value={role} onIonChange={(e) => { setRole(e.detail.value) }} interface={'alert'} name={t('userDetail:inputs-names:role')}>
-                                        {
-                                            roles.map((rol, i) => {
-                                                return (
-                                                    <IonSelectOption value={rol._id} key={i}>
-                                                        {translateRole(rol.name)}
-                                                    </IonSelectOption>
-                                                )
-                                            })
-                                        }
-                                    </IonSelect>
-                                </IonItem>
-                            </IonCol>}
-                            {isRegistre && <IonCol sizeXl='6' sizeLg='6' sizeMd='6' sizeSm='12' sizeXs='12'>
-                                <IonLabel className='item-user-label'>
-                                    {t('userDetail:inputs:institution').toUpperCase()}*
-                                </IonLabel>
-                                <IonItem fill='outline' counter={true}>
-                                    <IonSelect value={organization} interfaceOptions={
-                                        {
-                                            header: 'Seleccione la institución',
-                                            subHeader: 'Elija a la cual pertenece',
-                                            message: 'Elija solo una',
-                                            cssClass: 'select-org',
-                                            translucent: true
-                                        }
-                                    } onIonChange={(e) => { setOrganization(e.detail.value) }} interface={'alert'} name={t('userDetail:inputs-names:role')}>
-                                        {
-                                            institutions.map((organization, i) => {
-                                                return (
-                                                    <IonSelectOption value={organization._id} key={i}>
-                                                        {organization.name}
-                                                    </IonSelectOption>
-                                                )
-                                            })
-                                        }
-                                    </IonSelect>
-                                </IonItem>
-                            </IonCol>}
-                            <IonCol sizeXl='4' sizeLg='12' sizeMd='12' sizeSm='12' sizeXs='12'>
-                                <IonLabel className='item-user-label' position={'floating'} >
-                                    {t('userDetail:inputs:email').toUpperCase()}*
-                                </IonLabel>
-                                <IonItem fill='outline' counter={true}>
-                                    <IonInput
-                                        value={email}
-                                        type={'email'}
-                                        maxlength={50}
-                                        onIonChange={(e) => { setEmail(e.target.value as string) }}
-                                        name={t('userDetail:inputs-names:email')}
-                                    />
-                                </IonItem>
-                            </IonCol>
-                            <IonCol hidden={id.id ? true : false} sizeXl='4' sizeLg='6' sizeMd='6' sizeSm='12' sizeXs='12'>
-                                <IonLabel className='item-user-label' position={'floating'} >
-                                    {t('userDetail:inputs:password').toUpperCase()}*
-                                </IonLabel>
-                                <IonItem fill='outline' counter>
-                                    <IonInput
-                                        value={password}
-                                        type={passwordType}
-                                        maxlength={10}
-                                        onIonChange={(e) => { setPassword(e.target.value as string) }}
-                                        name={t('userDetail:inputs-names:password')}
-                                    />
-                                    <IonButton fill={'clear'} size={'default'} onClick={() => { (passwordType === 'text') ? setPasswordType('password') : setPasswordType('text') }}>
-                                        <IonIcon icon={(passwordType === 'text') ? eyeOutline : eyeOffOutline} />
-                                    </IonButton>
-                                </IonItem>
-                            </IonCol>
-                            <IonCol hidden={id.id ? true : false} sizeXl='4' sizeLg='6' sizeMd='6' sizeSm='12' sizeXs='12'>
-                                <IonLabel className='item-user-label' position={'floating'} >
-                                    {t('userDetail:inputs:confirm-password').toUpperCase()}*
-                                </IonLabel>
-                                <IonItem fill='outline' counter>
-                                    <IonInput
-                                        value={confirmPassword}
-                                        type={confirmPasswordType}
-                                        maxlength={10}
-                                        onIonChange={(e) => { setConfirmPassword(e.target.value as string) }}
-                                        name={t('userDetail:inputs-names:confirm-password')}
-                                    />
-                                    <IonButton fill={'clear'} size={'default'} onClick={() => { (confirmPasswordType === 'text') ? setConfirmPasswordType('password') : setConfirmPasswordType('text') }}>
-                                        <IonIcon icon={(confirmPasswordType === 'text') ? eyeOutline : eyeOffOutline} />
-                                    </IonButton>
-                                </IonItem>
-                            </IonCol>
-                        </IonRow>
-                        <IonRow>
-                            <IonCol sizeXl='3' sizeLg='4' sizeMd='6' sizeSm='12' sizeXs='12'>
-                                <p>(*) Datos obligatorios</p>
-                            </IonCol>
-                        </IonRow>
-                        <IonRow>
-                            <IonCol sizeXl='3' sizeLg='4' sizeMd='6' sizeSm='12' sizeXs='12'>
-                                <IonButton expand={'block'} className='button-userDetail' fill={'outline'} color={'secondary'} onClick={saveUser}>
-                                    <IonIcon icon={add} style={{marginRight: 10}} />
-                                    {(id.id) ? t('userDetail:buttons:editUser') : t('userDetail:buttons:createUser')}
-                                </IonButton>
-                            </IonCol>
-                            <IonCol sizeXl='3' sizeLg='4' sizeMd='6' sizeSm='12' sizeXs='12'>
-                                <IonButton expand={'block'} className='button-userDetail' fill={'outline'} color={'danger'} onClick={back}>
-                                    <IonIcon icon={close} style={{marginRight: 10}} />
-                                    {t('userDetail:buttons:cancel')}
-                                </IonButton>
-                            </IonCol>
-                        </IonRow>
+                    </IonCol>
+                    <IonCol sizeXl='4' sizeLg='4' sizeMd='0' sizeSm='0' sizeXs='0'>
+                        <VotBGComponent />
                     </IonCol>
                 </IonRow>
             </IonGrid>

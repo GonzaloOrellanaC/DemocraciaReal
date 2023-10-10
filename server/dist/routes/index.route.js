@@ -9,6 +9,7 @@ const roles_route_1 = (0, tslib_1.__importDefault)(require("./roles.route"));
 const pre_users_route_1 = (0, tslib_1.__importDefault)(require("./pre-users.route"));
 const surveys_route_1 = (0, tslib_1.__importDefault)(require("./surveys.route"));
 const surveys_response_route_1 = (0, tslib_1.__importDefault)(require("./surveys-response.route"));
+const ftp_route_1 = (0, tslib_1.__importDefault)(require("./ftp.route"));
 const router = (0, express_1.Router)();
 router.use('/api', auth_route_1.default);
 router.use('/api/users', users_route_1.default);
@@ -17,5 +18,6 @@ router.use('/api/roles', roles_route_1.default);
 router.use('/api/preUsers', pre_users_route_1.default);
 router.use('/api/survey', surveys_route_1.default);
 router.use('/api/survey-response', surveys_response_route_1.default);
+router.use('/api/ftp', ftp_route_1.default);
 exports.default = router;
 //# sourceMappingURL=index.route.js.map

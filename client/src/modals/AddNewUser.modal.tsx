@@ -19,7 +19,7 @@ const AddNewUserModal = ({open, hidden, closeModal, org, someFunction}:{open: bo
                     </IonButtons>
                 </IonToolbar>
             </IonHeader>
-            <UserDetailContainer org={org} closeModal={closeModal} />
+            <UserDetailContainer /* org={org} */ closeModal={closeModal} />
         </IonModal>
     )
 }

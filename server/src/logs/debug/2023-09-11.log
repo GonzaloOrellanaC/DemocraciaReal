@@ -1,0 +1,105 @@
+2023-09-11 17:20:43 info: =================================
+2023-09-11 17:20:43 info: ======= ENV: development =======
+2023-09-11 17:20:43 info: 🚀 App listening on the port 7000
+2023-09-11 17:20:43 info: =================================
+2023-09-11 17:21:25 info: [0mGET /api/organizations/getOrganizations [32m200[0m 122.432 ms - 743[0m
+2023-09-11 17:21:25 info: [0mGET /api/survey/getSurveys [32m200[0m 234.736 ms - -[0m
+2023-09-11 17:21:25 info: [0mGET /api/users/getUsers [32m200[0m 228.265 ms - -[0m
+2023-09-11 17:21:51 info: [0mGET /api/organizations/getOrganizations [36m304[0m 75.184 ms - -[0m
+2023-09-11 17:21:52 info: [0mGET /api/organizations/getOrganizations [36m304[0m 78.050 ms - -[0m
+2023-09-11 17:24:37 info: =================================
+2023-09-11 17:24:37 info: ======= ENV: development =======
+2023-09-11 17:24:37 info: 🚀 App listening on the port 7000
+2023-09-11 17:24:37 info: =================================
+2023-09-11 17:24:58 info: [0mGET /api/organizations/getOrganizations [36m304[0m 138.964 ms - -[0m
+2023-09-11 17:25:04 info: [0mPOST /api/users/createUser [32m201[0m 460.301 ms - 432[0m
+2023-09-11 17:25:16 info: [0mPOST /api/login [32m200[0m 142.849 ms - 611[0m
+2023-09-11 17:38:51 info: [0mPOST /api/login [32m200[0m 211.516 ms - -[0m
+2023-09-11 17:38:51 info: [0mPOST /api/survey/getSurveyByOrganizationId [32m200[0m 75.545 ms - 39[0m
+2023-09-11 17:38:51 info: [0mPOST /api/survey/getSurveyByOrganizationId [32m200[0m 72.492 ms - 39[0m
+2023-09-11 17:38:51 info: [0mPOST /api/users/getUsersByOrg [32m200[0m 162.072 ms - -[0m
+2023-09-11 17:38:51 info: [0mPOST /api/users/getUsersByOrg [32m200[0m 161.968 ms - -[0m
+2023-09-11 17:41:35 info: [0mPOST /api/survey/getSurveyByOrganizationId [32m200[0m 107.604 ms - 39[0m
+2023-09-11 17:41:35 info: [0mPOST /api/users/getUsersByOrg [32m200[0m 195.921 ms - -[0m
+2023-09-11 17:42:29 info: [0mPOST /api/survey/getSurveyByOrganizationId [32m200[0m 76.617 ms - 39[0m
+2023-09-11 17:42:29 info: [0mPOST /api/survey/getSurveyByOrganizationId [32m200[0m 72.953 ms - 39[0m
+2023-09-11 17:42:29 info: [0mPOST /api/users/getUsersByOrg [32m200[0m 164.363 ms - -[0m
+2023-09-11 17:42:29 info: [0mPOST /api/users/getUsersByOrg [32m200[0m 166.872 ms - -[0m
+2023-09-11 17:42:30 info: [0mPOST /api/survey/getSurveyByOrganizationId [32m200[0m 70.049 ms - 39[0m
+2023-09-11 17:42:30 info: [0mPOST /api/users/getUsersByOrg [32m200[0m 153.445 ms - -[0m
+2023-09-11 17:45:42 info: [0mPOST /api/survey/getSurveyByOrganizationId [32m200[0m 68.982 ms - 39[0m
+2023-09-11 17:45:42 info: [0mPOST /api/survey/getSurveyByOrganizationId [32m200[0m 78.554 ms - 39[0m
+2023-09-11 17:45:42 info: [0mPOST /api/users/getUsersByOrg [32m200[0m 152.794 ms - -[0m
+2023-09-11 17:45:42 info: [0mPOST /api/users/getUsersByOrg [32m200[0m 155.499 ms - -[0m
+2023-09-11 17:45:43 info: [0mPOST /api/survey/getSurveyByOrganizationId [32m200[0m 73.345 ms - 39[0m
+2023-09-11 17:45:43 info: [0mPOST /api/users/getUsersByOrg [32m200[0m 160.292 ms - -[0m
+2023-09-11 17:53:47 info: [0mPOST /api/survey/getSurveyByOrganizationId [32m200[0m 69.304 ms - 39[0m
+2023-09-11 17:53:47 info: [0mPOST /api/survey/getSurveyByOrganizationId [32m200[0m 70.826 ms - 39[0m
+2023-09-11 17:53:47 info: [0mPOST /api/users/getUsersByOrg [32m200[0m 156.280 ms - -[0m
+2023-09-11 17:53:47 info: [0mPOST /api/users/getUsersByOrg [32m200[0m 162.591 ms - -[0m
+2023-09-11 17:53:48 info: [0mPOST /api/survey/getSurveyByOrganizationId [32m200[0m 70.799 ms - 39[0m
+2023-09-11 17:53:48 info: [0mPOST /api/users/getUsersByOrg [32m200[0m 157.438 ms - -[0m
+2023-09-11 17:53:55 info: [0mPOST /api/organizations/getOrgById [32m200[0m 78.245 ms - 347[0m
+2023-09-11 17:54:02 info: [0mPOST /api/organizations/getOrgById [32m200[0m 78.720 ms - 347[0m
+2023-09-11 17:54:02 info: [0mPOST /api/organizations/getOrgById [32m200[0m 75.196 ms - 347[0m
+2023-09-11 17:54:38 info: [0mPOST /api/organizations/getOrgById [32m200[0m 74.749 ms - 347[0m
+2023-09-11 17:54:43 info: [0mGET /api/organizations/getOrganizations [36m304[0m 80.508 ms - -[0m
+2023-09-11 17:54:44 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 78.188 ms - 712[0m
+2023-09-11 17:54:44 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 78.300 ms - 712[0m
+2023-09-11 17:54:44 info: [0mGET /api/organizations/getOrganizations [36m304[0m 96.861 ms - -[0m
+2023-09-11 18:04:01 info: [0mPOST /api/organizations/getOrgById [32m200[0m 73.966 ms - 347[0m
+2023-09-11 18:04:01 info: [0mGET /api/organizations/getOrganizations [36m304[0m 71.073 ms - -[0m
+2023-09-11 18:04:01 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 75.783 ms - 712[0m
+2023-09-11 18:04:01 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 73.538 ms - 712[0m
+2023-09-11 18:04:01 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 73.045 ms - 712[0m
+2023-09-11 18:04:02 info: [0mGET /api/organizations/getOrganizations [36m304[0m 70.680 ms - -[0m
+2023-09-11 18:04:31 info: [0mPOST /api/organizations/getOrgById [32m200[0m 78.200 ms - 347[0m
+2023-09-11 18:04:31 info: [0mPOST /api/organizations/getOrgById [32m200[0m 79.644 ms - 347[0m
+2023-09-11 18:04:37 info: [0mGET /api/organizations/getOrganizations [36m304[0m 76.200 ms - -[0m
+2023-09-11 18:04:37 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 85.190 ms - 712[0m
+2023-09-11 18:04:37 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 87.077 ms - 712[0m
+2023-09-11 18:04:37 info: [0mGET /api/organizations/getOrganizations [36m304[0m 72.099 ms - -[0m
+2023-09-11 18:05:37 info: [0mPOST /api/organizations/getOrgById [32m200[0m 74.472 ms - 347[0m
+2023-09-11 18:05:37 info: [0mPOST /api/organizations/getOrgById [32m200[0m 76.081 ms - 347[0m
+2023-09-11 18:05:37 info: [0mGET /api/organizations/getOrganizations [36m304[0m 70.536 ms - -[0m
+2023-09-11 18:05:37 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 78.375 ms - 712[0m
+2023-09-11 18:05:38 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 74.219 ms - 712[0m
+2023-09-11 18:05:38 info: [0mGET /api/organizations/getOrganizations [36m304[0m 71.691 ms - -[0m
+2023-09-11 18:05:44 info: [0mPOST /api/organizations/getOrgById [32m200[0m 76.583 ms - 347[0m
+2023-09-11 18:05:44 info: [0mPOST /api/organizations/getOrgById [32m200[0m 76.229 ms - 347[0m
+2023-09-11 18:05:48 info: [0mGET /api/organizations/getOrganizations [36m304[0m 77.402 ms - -[0m
+2023-09-11 18:05:48 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 78.169 ms - 712[0m
+2023-09-11 18:05:48 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 80.092 ms - 712[0m
+2023-09-11 18:05:48 info: [0mGET /api/organizations/getOrganizations [36m304[0m 77.845 ms - -[0m
+2023-09-11 18:06:21 info: [0mGET /api/organizations/getOrganizations [36m304[0m 79.407 ms - -[0m
+2023-09-11 18:06:21 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 69.468 ms - 712[0m
+2023-09-11 18:07:10 info: =================================
+2023-09-11 18:07:10 info: ======= ENV: development =======
+2023-09-11 18:07:10 info: 🚀 App listening on the port 7000
+2023-09-11 18:07:10 info: =================================
+2023-09-11 18:08:24 info: [0mGET /api/organizations/getOrganizations [36m304[0m 132.489 ms - -[0m
+2023-09-11 18:08:24 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 118.692 ms - 712[0m
+2023-09-11 18:09:02 info: [0mPOST /api/organizations/getOrgById [32m200[0m 75.948 ms - 347[0m
+2023-09-11 18:09:02 info: [0mPOST /api/organizations/getOrgById [32m200[0m 79.377 ms - 347[0m
+2023-09-11 18:09:02 info: [0mGET /api/organizations/getOrganizations [36m304[0m 79.670 ms - -[0m
+2023-09-11 18:09:02 info: [0mGET /api/organizations/getOrganizations [36m304[0m 75.755 ms - -[0m
+2023-09-11 18:09:03 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 76.726 ms - 712[0m
+2023-09-11 18:09:36 info: [0mPOST /api/users/createUser [32m201[0m 388.269 ms - 477[0m
+2023-09-11 18:09:47 info: [0mPOST /api/organizations/getOrgById [32m200[0m 75.644 ms - 374[0m
+2023-09-11 18:09:47 info: [0mPOST /api/organizations/getOrgById [32m200[0m 81.160 ms - 374[0m
+2023-09-11 18:09:52 info: [0mPOST /api/login [32m200[0m 205.023 ms - 970[0m
+2023-09-11 18:09:55 info: [0mPOST /api/organizations/getOrgById [32m200[0m 75.071 ms - 374[0m
+2023-09-11 18:09:55 info: [0mPOST /api/organizations/getOrgById [32m200[0m 75.954 ms - 374[0m
+2023-09-11 18:10:23 info: [0mPOST /api/organizations/getOrgById [32m200[0m 78.439 ms - 374[0m
+2023-09-11 18:10:23 info: [0mPOST /api/organizations/getOrgById [32m200[0m 84.248 ms - 374[0m
+2023-09-11 18:10:46 info: [0mPOST /api/organizations/getOrgById [32m200[0m 83.372 ms - 374[0m
+2023-09-11 18:13:20 info: [0mGET /api/organizations/getOrganizations [32m200[0m 74.148 ms - 770[0m
+2023-09-11 18:13:20 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 80.271 ms - 712[0m
+2023-09-11 18:13:20 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 82.028 ms - 712[0m
+2023-09-11 18:13:20 info: [0mGET /api/organizations/getOrganizations [36m304[0m 78.758 ms - -[0m
+2023-09-11 18:13:57 info: [0mPOST /api/users/createUser [32m201[0m 423.519 ms - 477[0m
+2023-09-11 18:14:07 info: [0mPOST /api/organizations/getOrgById [32m200[0m 80.802 ms - 401[0m
+2023-09-11 18:14:07 info: [0mPOST /api/organizations/getOrgById [32m200[0m 72.844 ms - 401[0m
+2023-09-11 18:14:13 info: [0mPOST /api/login [32m200[0m 208.580 ms - 997[0m
+2023-09-11 18:14:16 info: [0mPOST /api/organizations/getOrgById [32m200[0m 76.431 ms - 401[0m
+2023-09-11 18:14:16 info: [0mPOST /api/organizations/getOrgById [32m200[0m 83.292 ms - 401[0m

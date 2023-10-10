@@ -16,6 +16,9 @@ declare const config: {
         password: string;
         url: string;
         platformName: string;
+        ftpUrl: string;
+        ftpUser: string;
+        ftpPassword: string;
     };
     dbConfig: {
         host: string;

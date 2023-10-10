@@ -9,7 +9,11 @@ const password: string = process.env.PASSWORD
 const url = process.env.URL || `http://localhost:${port}`
 const platformName = process.env.PLATFORM_NAME
 
-const env = { environment, port, locale, name, lastName, run, email, password, url, platformName }
+const ftpUrl = process.env.FTP_URL
+const ftpUser = process.env.FTP_USER
+const ftpPassword = process.env.FTP_PASSWORD
 
-export { environment, port, locale, name, lastName, run, email, password, url, platformName }
+const env = { environment, port, locale, name, lastName, run, email, password, url, platformName, ftpUrl, ftpUser, ftpPassword }
+
+export { environment, port, locale, name, lastName, run, email, password, url, platformName, ftpUrl, ftpUser, ftpPassword }
 export default env

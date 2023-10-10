@@ -12,10 +12,6 @@ const RegistreContainer = () => {
     const [isValid, setIsValid] = useState<boolean>()
     const [rut, setRut] = useState<string>('')
     const [haveUser, setHaveUser] = useState<boolean>(false)
-    useEffect(() => {
-        const url = window.location.href
-        console.log(url)
-    },[])
     const sendRut = async () => {
         const response = await preUsersRouter.findPreUserByRun(rut)
         /* console.log(response.data) */

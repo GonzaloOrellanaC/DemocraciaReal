@@ -19,6 +19,8 @@ import multer from 'multer'
 import router from './routes/index.route'
 import AccessControlServices from '@services/accessControl.service'
 import SocketController from './controllers/socket.controller'
+import { /* ftpClient,  */readFileTest } from './services/ftp.service'
+/* import { ftpConnection } from './ftpNode' */
 
 process.env.SUPPRESS_NO_CONFIG_WARNING = 'true'
 const app: express.Application = express()
@@ -37,6 +39,7 @@ const connectToDatabase = () => {
             await AccessControlServices.initAccessControl()
             const user = await AccessControlServices.createSuperAdmin()
             console.log(user)
+            /* readFileTest() */
             /* if (user) {
                 await AccessControlServices.initAccessControl()
             } */
@@ -44,6 +47,12 @@ const connectToDatabase = () => {
             console.log(err)
         }
     })
+
+    /* console.log(ftpConnection) */
+    
+    
+
+    /*  */
 }
 
 const initializeMiddlewares = () => {

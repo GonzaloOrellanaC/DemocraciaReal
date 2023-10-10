@@ -1,1 +1,1 @@
-export const Logo = './assets/logo/democracia-real-logo.png'
+export const Logo = './assets/logo/logo_2_Democracia_real.jpg'

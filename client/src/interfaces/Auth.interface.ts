@@ -1,3 +1,4 @@
+import { Organization } from "./Role.interface"
 import { User } from "./User.interface"
 
 export interface AuthType {
@@ -14,4 +15,5 @@ export interface AuthType {
     totalDocsByMonth: number
     isPremium: boolean
     userId: string
+    org?: Organization
 }

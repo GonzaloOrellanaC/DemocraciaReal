@@ -1,13 +1,14 @@
 import { createContext, useContext, useEffect, useState } from 'react'
 import { AuthType } from '../interfaces/Auth.interface'
 import { useHistory } from 'react-router'
-import { authRouter } from '../router'
+import { authRouter, organizationRouter } from '../router'
 import { User } from '../interfaces/User.interface'
+import { Organization } from '../interfaces/Role.interface'
 
 export const AuthContext = createContext<AuthType>({} as AuthType)
 
 export const AuthProvider = (props: any) => {
-    const [isAuth, setIsAuth] = useState(localStorage.getItem('isAuth') ? true : false)
+    const [isAuth, setIsAuth] = useState(false)
     const [isDesktop, setIsDesktop] = useState(false)
     const [user, setUser] = useState<User>()
     const [userId, setUserId] = useState<string>('')
@@ -16,10 +17,12 @@ export const AuthProvider = (props: any) => {
     const [initials, setInitials] = useState('')
     const [loading, setLoading] = useState(false)
     const [isPremium, setIsPremium] = useState(false)
+    const [org, setOrg] = useState<Organization>()
 
     const history = useHistory()
 
     useEffect(() => {
+        setIsAuth(localStorage.getItem('isAuth') ? true : false)
         /* const isAuthCache = localStorage.getItem('isAuth')
         if (isAuthCache) {
             setIsAuth(true)
@@ -43,7 +46,7 @@ export const AuthProvider = (props: any) => {
 
     useEffect(() => {
         console.log(isAuth)
-        if (isAuth) {
+        if (isAuth===true) {
             const tokenSaved = localStorage.getItem('token')
             if (tokenSaved) {
                 setToken(tokenSaved)
@@ -56,6 +59,8 @@ export const AuthProvider = (props: any) => {
             if (userCache) {
                 setUser(JSON.parse(userCache))
             }
+        } else {
+            getOrgNoAuth()
         }
     }, [isAuth])
 
@@ -66,6 +71,14 @@ export const AuthProvider = (props: any) => {
             setTotalDocsByMonth(user.totalDocsByMonth)
             setIsPremium(user.isPremium)
             setUserId(user._id)
+            if (user.organization && (user.organization.length > 0)) {
+                setOrg(user.organization[0])
+            } else {
+
+                /* const orgCache = {} as Organization
+                orgCache._id = '64ee5dd60149073ae51c5124' */
+                /* setOrg(orgCache) */
+            }
         } else {
             const userCache = localStorage.getItem('user')
             if (userCache) {
@@ -77,6 +90,11 @@ export const AuthProvider = (props: any) => {
             }
         }
     }, [user])
+
+    const getOrgNoAuth = async () => {
+        const orgCache = await organizationRouter.getOrgById('64ee5dd60149073ae51c5124')
+        setOrg(orgCache.data)
+    }
 
     const login = async (email: string, password: string) => {
         setLoading(true)
@@ -145,7 +163,8 @@ export const AuthProvider = (props: any) => {
         token,
         totalDocsByMonth,
         isPremium,
-        userId
+        userId,
+        org
     }
 
     return (

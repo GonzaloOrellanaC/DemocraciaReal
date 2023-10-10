@@ -6,6 +6,7 @@ import RolesRouter from './roles.route'
 import PreUsersRouter from './pre-users.route'
 import SurveysRouter from './surveys.route'
 import SurveysResponseRouter from './surveys-response.route'
+import FtpResponseRouter from './ftp.route'
 
 const router = Router()
 
@@ -16,5 +17,6 @@ router.use('/api/roles', RolesRouter)
 router.use('/api/preUsers', PreUsersRouter)
 router.use('/api/survey', SurveysRouter)
 router.use('/api/survey-response', SurveysResponseRouter)
+router.use('/api/ftp', FtpResponseRouter)
 
 export default router

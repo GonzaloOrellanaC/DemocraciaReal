@@ -1,0 +1,49 @@
+2023-09-20 22:50:16 info: =================================
+2023-09-20 22:50:16 info: ======= ENV: development =======
+2023-09-20 22:50:16 info: 🚀 App listening on the port 7000
+2023-09-20 22:50:16 info: =================================
+2023-09-20 22:50:26 info: [0mPOST /api/organizations/getOrgById [32m200[0m 86.156 ms - 401[0m
+2023-09-20 22:50:26 info: [0mPOST /api/organizations/getOrgById [32m200[0m 343.709 ms - 401[0m
+2023-09-20 22:50:27 info: [0mGET /api/survey/getSurveys [32m200[0m 218.478 ms - -[0m
+2023-09-20 22:50:27 info: [0mGET /api/users/getUsers [32m200[0m 186.211 ms - -[0m
+2023-09-20 22:50:27 info: [0mGET /api/organizations/getOrganizations [32m200[0m 72.873 ms - 797[0m
+2023-09-20 22:50:32 info: [0mPOST /api/organizations/getOrgById [32m200[0m 78.853 ms - 401[0m
+2023-09-20 23:06:18 info: =================================
+2023-09-20 23:06:18 info: ======= ENV: development =======
+2023-09-20 23:06:18 info: 🚀 App listening on the port 7000
+2023-09-20 23:06:18 info: =================================
+2023-09-20 23:07:19 info: =================================
+2023-09-20 23:07:19 info: ======= ENV: development =======
+2023-09-20 23:07:19 info: 🚀 App listening on the port 7000
+2023-09-20 23:07:19 info: =================================
+2023-09-20 23:09:31 info: [0mPOST /api/login [32m200[0m 250.874 ms - -[0m
+2023-09-20 23:09:31 info: [0mGET /api/roles/getRolesAdmin [32m200[0m 77.200 ms - 892[0m
+2023-09-20 23:09:31 info: [0mGET /api/organizations/getOrganizations [36m304[0m 92.752 ms - -[0m
+2023-09-20 23:09:31 info: [0mGET /api/survey/getSurveys [36m304[0m 171.634 ms - -[0m
+2023-09-20 23:09:31 info: [0mGET /api/users/getUsers [32m200[0m 174.702 ms - -[0m
+2023-09-20 23:09:31 info: [0mGET /api/organizations/getOrganizations [36m304[0m 77.736 ms - -[0m
+2023-09-20 23:09:32 info: [0mGET /api/survey/getSurveys [36m304[0m 154.095 ms - -[0m
+2023-09-20 23:09:32 info: [0mGET /api/users/getUsers [36m304[0m 151.247 ms - -[0m
+2023-09-20 23:09:41 info: [0mPOST /api/survey/getSurveyById [32m200[0m 160.561 ms - -[0m
+2023-09-20 23:09:42 info: [0mPOST /api/survey-response/getSurveyDataBySurveyId [32m201[0m 90.555 ms - -[0m
+2023-09-20 23:09:42 info: [0mPOST /api/survey/getSurveyById [32m200[0m 153.056 ms - -[0m
+2023-09-20 23:09:42 info: [0mPOST /api/survey-response/getSurveyDataBySurveyId [32m201[0m 79.810 ms - -[0m
+2023-09-20 23:09:47 info: [0mPOST /api/organizations/getOrgById [32m200[0m 70.351 ms - 401[0m
+2023-09-20 23:11:42 info: [0mGET /api/organizations/getOrganizations [36m304[0m 75.865 ms - -[0m
+2023-09-20 23:11:42 info: [0mGET /api/organizations/getOrganizations [36m304[0m 79.373 ms - -[0m
+2023-09-20 23:11:42 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 93.843 ms - 712[0m
+2023-09-20 23:11:42 info: [0mPOST /api/roles/getRolesById/organization/ [32m200[0m 107.819 ms - 712[0m
+2023-09-20 23:11:52 info: [0mPOST /api/organizations/getOrgById [32m200[0m 78.066 ms - 401[0m
+2023-09-20 23:11:52 info: [0mPOST /api/organizations/getOrgById [32m200[0m 81.085 ms - 401[0m
+2023-09-20 23:18:31 info: [0mPOST /api/login [32m200[0m 265.294 ms - -[0m
+2023-09-20 23:18:31 info: [0mGET /api/roles/getRolesAdmin [36m304[0m 70.724 ms - -[0m
+2023-09-20 23:18:31 info: [0mGET /api/organizations/getOrganizations [36m304[0m 81.334 ms - -[0m
+2023-09-20 23:18:31 info: [0mGET /api/users/getUsers [36m304[0m 153.987 ms - -[0m
+2023-09-20 23:18:31 info: [0mGET /api/survey/getSurveys [36m304[0m 161.873 ms - -[0m
+2023-09-20 23:18:32 info: [0mGET /api/organizations/getOrganizations [36m304[0m 79.559 ms - -[0m
+2023-09-20 23:18:32 info: [0mGET /api/users/getUsers [36m304[0m 186.451 ms - -[0m
+2023-09-20 23:18:32 info: [0mGET /api/survey/getSurveys [36m304[0m 172.923 ms - -[0m
+2023-09-20 23:19:52 info: [0mPOST /api/survey/getSurveyById [32m200[0m 151.274 ms - -[0m
+2023-09-20 23:19:52 info: [0mPOST /api/survey/getSurveyById [32m200[0m 157.104 ms - -[0m
+2023-09-20 23:19:52 info: [0mPOST /api/survey-response/getSurveyDataBySurveyId [32m201[0m 78.325 ms - -[0m
+2023-09-20 23:19:53 info: [0mPOST /api/survey-response/getSurveyDataBySurveyId [32m201[0m 76.339 ms - -[0m

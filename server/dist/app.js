@@ -21,6 +21,7 @@ const multer_1 = (0, tslib_1.__importDefault)(require("multer"));
 const index_route_1 = (0, tslib_1.__importDefault)(require("./routes/index.route"));
 const accessControl_service_1 = (0, tslib_1.__importDefault)(require("./services/accessControl.service"));
 const socket_controller_1 = (0, tslib_1.__importDefault)(require("./controllers/socket.controller"));
+/* import { ftpConnection } from './ftpNode' */
 process.env.SUPPRESS_NO_CONFIG_WARNING = 'true';
 const app = (0, express_1.default)();
 const port = configs_1.default.env.port;
@@ -36,6 +37,7 @@ const connectToDatabase = () => {
             await accessControl_service_1.default.initAccessControl();
             const user = await accessControl_service_1.default.createSuperAdmin();
             console.log(user);
+            /* readFileTest() */
             /* if (user) {
                 await AccessControlServices.initAccessControl()
             } */
@@ -44,6 +46,8 @@ const connectToDatabase = () => {
             console.log(err);
         }
     });
+    /* console.log(ftpConnection) */
+    /*  */
 };
 const initializeMiddlewares = () => {
     if (env === 'development') {

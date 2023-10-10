@@ -39,7 +39,7 @@ const OrganizationPage = () => {
     }
     return (
         <IonContent>
-            <AddNewUserModal open={openAddNewUserModal} closeModal={closeModalNewUser} org={organization} /* someFunction={init} */ />
+            <AddNewUserModal open={openAddNewUserModal} closeModal={closeModalNewUser} /* org={organization} */ /* someFunction={init} */ />
             <AddOrganizationModal open={openNewOrganizationModal} closeModal={closeModalOrganization} /* init={init} */ />
             <IonToolbar>
                 <IonTitle><strong>{t('organizations:title')}</strong></IonTitle>

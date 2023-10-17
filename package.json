@@ -4,7 +4,7 @@
   "description": "Democracia Real - Ionic/React - NodeJS",
   "main": "index.js",
   "scripts": {
-    "start": "npm start --prefix server",
+    "start": "npm start-prod --prefix server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev-server": "npm run start-dev --prefix server",
     "dev-client": "npm run dev --prefix client",
